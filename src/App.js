@@ -1,4 +1,3 @@
-import './styles/App.less';
 import MainPage from "./Pages/MainPage.tsx";
 
 function App() {
