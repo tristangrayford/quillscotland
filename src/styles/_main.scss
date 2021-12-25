@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
+    background-color: $background;
+
+    .App {
+        text-align: center;
+
+        h1 {
+            color: $mainfontcolor;
+            font-family: $mainfont;
+            font-variant: small-caps;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderMenu from "./Menu/HeaderMenu";
 
 class MainPage extends React.Component {
     public constructor(props: {}) {
@@ -6,7 +7,10 @@ class MainPage extends React.Component {
     }
 
     public render(): JSX.Element {
-        return <h1>Tristan Gray</h1>
+        return (<>
+            <HeaderMenu/>
+            <h1>Tristan Gray</h1>
+        </>)
     }
 }
 
