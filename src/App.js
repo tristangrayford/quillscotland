@@ -1,5 +1,5 @@
-import './App.sass';
-import MainPage from "./Pages/MainPage";
+import './styles/App.less';
+import MainPage from "./Pages/MainPage.tsx";
 
 function App() {
   return (

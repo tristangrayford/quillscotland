@@ -1,6 +1,6 @@
 import React from "react";
 
-export class MainPage extends React.Component {
+class MainPage extends React.Component {
     public constructor(props: {}) {
         super(props);
     }
@@ -9,3 +9,5 @@ export class MainPage extends React.Component {
         return <h1>Tristan Gray</h1>
     }
 }
+
+export default MainPage;
