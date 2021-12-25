@@ -1,4 +1,6 @@
-.App {
+@use "params"
+  
+  .App {
   text-align: center;
 }
 
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: params.$background;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,13 +28,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
