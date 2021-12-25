@@ -1,4 +1,5 @@
 import MainPage from "./Pages/MainPage.tsx";
+import './App.scss';
 
 function App() {
   return (
