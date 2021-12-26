@@ -12,12 +12,63 @@
             font-family: $mainfont;
             color: $mainfontcolor;
             display: inline-block;
-            margin-right: 20px;
+            margin-left: 20px;
         }
     }
 
     .header-logo {
         width: 60px;
         grid-column: 1;
+    }
+}
+
+@media(max-width: 750px){
+    .header-menu {
+        grid-template-columns: 50px auto 500px;
+
+        .menu-items{
+            margin-left: auto;
+            h3 {
+                font-size: 16px;
+            }
+        }
+
+        .header-logo {
+            width: 50px;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .header-menu {
+        grid-template-columns: 40px auto 400px;
+
+        .menu-items{
+            h3 {
+                font-size: 12px;
+            }
+        }
+
+        .header-logo {
+            width: 40px;
+        }
+    }
+}
+
+@media(max-width: 490px){
+    .header-menu {
+        grid-template-columns: 40px auto 200px;
+        height: 80px;
+
+        .menu-items{
+            h3 {
+                font-size: 12px;
+            }
+        }
+
+        .header-logo {
+            width: 40px;
+            margin-top: 15px;
+        }
     }
 }

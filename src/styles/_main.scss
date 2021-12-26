@@ -1,8 +1,9 @@
 body {
     margin: 0;
     height: calc(100vh - 20px);
-    width: calc(100vw - 20px);
+    width: 100vw;
     background-color: $background;
+    overflow-x: hidden;
 
     .App {
         text-align: center;
@@ -36,6 +37,14 @@ body {
                 img {
                     height: 250px;
                 }
+            }
+        }
+    }
+
+    @media(max-width: 490px){
+        .App {
+            .series-title {
+                width: 100%;
             }
         }
     }
