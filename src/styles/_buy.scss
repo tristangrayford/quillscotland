@@ -1,0 +1,49 @@
+.popup-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000F0;
+    width: 100vw;
+    height: 100vh;
+
+    .regions {
+        margin-top: 25%;
+        width: 800px;
+        margin-left: calc(50% - 400px);
+        text-align: center;
+
+        .close-button {
+            background: $background;
+            margin-top: 20px;
+            padding: 5px;
+            width: 50%;
+            color: $mainfontcolor;
+            border: none;
+        }
+
+        h2 {
+            color: $mainfontcolor;
+        }
+
+        .region {
+            display: inline-block;
+            margin: 20px;
+
+            img {
+                height: 150px;
+            }
+        }
+
+        .retailer {
+            display: inline-block;
+            background: white;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+
+            img {
+                height: 80px;
+            }
+        }
+    }
+}

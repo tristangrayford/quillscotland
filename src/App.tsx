@@ -1,4 +1,4 @@
-import MainPage from "./Pages/MainPage";
+import MainPage from "./Pages/Main/MainPage";
 import React from 'react';
 import './App.scss';
 

@@ -12,5 +12,26 @@ body {
             font-family: $mainfont;
             font-variant: small-caps;
         }
+
+        .books {
+            .book-item {
+                display: inline-block;
+                margin: 20px;
+                color: $mainfontcolor;
+                width: 250px;
+                height: 500px;
+                vertical-align: top;
+
+                h3 {
+                    font-weight: 100;
+                    font-size: 18px;
+                    font-family: $mainfont;
+                }
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
     }
 }
