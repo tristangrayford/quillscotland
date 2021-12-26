@@ -3,7 +3,7 @@
     width: calc(100% - 40px);
     margin: 20px;
     display: grid;
-    grid-template-columns: 50px auto 600px;
+    grid-template-columns: 60px auto 600px;
 
     .menu-items{
         grid-column: 3;
@@ -17,7 +17,7 @@
     }
 
     .header-logo {
-        width: 50px;
+        width: 60px;
         grid-column: 1;
     }
 }

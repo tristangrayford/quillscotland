@@ -6,6 +6,7 @@ import BookItem from "./BookItem";
 const whispers = require("../../images/Portrait Whispers.png")
 const names = require("../../images/Names of the Dead.png")
 const gift = require("../../images/A Gift of the Sea.png")
+const talesBlock = require("../../images/Tales Block.png")
 
 const whispersDesc = <p>Paid to unearth the fate of the children of the Three Willows, Fiadh expects the work of a predatory fey.<br /><br /> But this was a very different kind of monster who preyed upon the village folk. One that would leave her no choice but to journey into the wilderness beyond.<br /><br /> Experience an adventure in the world of Seann Àite, inspired by the myths and folklore of dark age Scotland.<br /><br /> The dialogue features sections written in the Scots language which is used throughout the series.</p>
 
@@ -34,6 +35,7 @@ function MainPage() {
     return (<>
         <HeaderMenu />
         <h1>Tristan Gray</h1>
+        <img className="series-title" src={ talesBlock }/>
         <div className="books">
             <BookItem bookItemContent={whispersDesc} bookItemTitle="Whispers To A Crow" bookItemImage={whispers} onClick={onClick} book={Book.Whispers} />
             <BookItem bookItemContent={namesDesc} bookItemTitle="Names of the Dead" bookItemImage={names} onClick={onClick} book={Book.Names} />

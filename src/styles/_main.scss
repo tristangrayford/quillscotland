@@ -13,13 +13,18 @@ body {
             font-variant: small-caps;
         }
 
+        .series-title {
+            width: 65%;
+            max-width: 800px;
+        }
+
         .books {
             .book-item {
                 display: inline-block;
                 margin: 20px;
                 color: $mainfontcolor;
                 width: 250px;
-                height: 500px;
+                height: 650px;
                 vertical-align: top;
 
                 h3 {
