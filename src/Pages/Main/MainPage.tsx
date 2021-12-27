@@ -32,17 +32,17 @@ function MainPage() {
         setSelected(false);
     }
     
-    return (<>
+    return (<div className="App">
         <HeaderMenu />
         <h1>Tristan Gray</h1>
-        <img className="series-title" src={ talesBlock }/>
+        <img className="series-title" src={ talesBlock } alt="Tales of Seann Aite"/>
         <div className="books">
             <BookItem bookItemContent={whispersDesc} bookItemTitle="Whispers To A Crow" bookItemImage={whispers} onClick={onClick} book={Book.Whispers} />
             <BookItem bookItemContent={namesDesc} bookItemTitle="Names of the Dead" bookItemImage={names} onClick={onClick} book={Book.Names} />
             <BookItem bookItemContent={giftDesc} bookItemTitle="A Gift of the Sea" bookItemImage={gift} onClick={onClick} book={Book.Gift} />
         </div>
         {selected ? <BuyPopup onClose={onClose} ref={buyElement} /> : null}
-    </>)
+    </div>)
 }
 
 export default MainPage;

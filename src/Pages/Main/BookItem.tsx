@@ -17,7 +17,7 @@ class BookItem extends React.Component<BookItemProps> {
 
     public render(): JSX.Element {
         return (<div className="book-item" onClick={this.onClick}>
-            <img src={this.props.bookItemImage}/>
+            <img src={this.props.bookItemImage} alt={ this.props.bookItemTitle + " cover" }/>
             <h3>{this.props.bookItemTitle}</h3>
             {this.props.bookItemContent}
         </div>)

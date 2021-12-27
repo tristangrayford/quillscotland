@@ -55,7 +55,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                         <div className="retailer" onClick={() => this.onGoToRetailer(Retailer.Amazon)}>
                             <img src={amazon} alt="Amazon" />
                         </div>
-                        {this.state.regionSelected == Region.USA && < div className="retailer" onClick={() => this.onGoToRetailer(Retailer.BarnesAndNoble)}>
+                        {this.state.regionSelected === Region.USA && < div className="retailer" onClick={() => this.onGoToRetailer(Retailer.BarnesAndNoble)}>
                         <img src={bandn} alt="Barnes and Noble" />
                     </div>}
                         <div className="retailer" onClick={() => this.onGoToRetailer(Retailer.Kobo)}>
@@ -67,7 +67,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                         <div className="retailer" onClick={() => this.onGoToRetailer(Retailer.eBooks)}>
                             <img src={ebooks} alt="eBooks.com" />
                         </div>
-                        {this.state.regionSelected == Region.UK && <div className="retailer" onClick={() => this.onGoToRetailer(Retailer.Waterstones)}>
+                        {this.state.regionSelected === Region.UK && <div className="retailer" onClick={() => this.onGoToRetailer(Retailer.Waterstones)}>
                             <img src={waterstones} alt="Waterstones" />
                         </div>}
                     </> : <>
@@ -101,13 +101,14 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Whispers:
                                 window.open("https://www.amazon.co.uk/gp/product/B08FZX3682", '_blank');
                                 break;
-                        case Book.Names:
+                            case Book.Names:
                                 window.open("https://www.amazon.co.uk/gp/product/B08M49C3YN", '_blank');
                                 break;
-                        case Book.Gift:
+                            case Book.Gift:
                                 window.open("https://www.amazon.co.uk/gp/product/B097NRDFT8", '_blank');
                                 break;
-                            }
+                        }
+                        break;
                     case Retailer.Kobo:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
@@ -120,6 +121,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 window.open("https://www.kobo.com/gb/en/ebook/a-gift-of-the-sea", '_blank');
                                 break;
                         }
+                        break;
                         case Retailer.AppleBooks:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
@@ -132,6 +134,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 window.open("https://tools.applemediaservices.com/book/1573996625?country=gb&ref=1445749546", '_blank');
                                 break;
                         }
+                        break;
                         case Retailer.Waterstones:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
@@ -144,6 +147,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 window.open("https://www.waterstones.com/book/a-gift-of-the-sea/tristan-gray/9781838485443", '_blank');
                                 break;
                         }
+                        break;
                         case Retailer.eBooks:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
@@ -156,7 +160,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 window.open("https://www.ebooks.com/en-gb/book/210324351/a-gift-of-the-sea/tristan-gray/", '_blank');
                                 break;
                             }
-                        }
+                }
                 break;
             case Region.USA:
                 switch (retailer) {
@@ -172,6 +176,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 window.open("https://www.amazon.co.uk/gp/product/B097NRDFT8", '_blank');
                                 break;
                         }
+                        break;
                         case Retailer.BarnesAndNoble:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
@@ -184,6 +189,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 window.open("https://www.barnesandnoble.com/w/a-gift-of-the-sea-tristan-gray/1139740469", '_blank');
                                 break;
                         }
+                        break;
                     case Retailer.Kobo:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
@@ -196,6 +202,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 window.open("https://www.kobo.com/us/en/ebook/a-gift-of-the-sea", '_blank');
                                 break;
                         }
+                        break;
                         case Retailer.AppleBooks:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
@@ -208,6 +215,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 window.open("https://tools.applemediaservices.com/book/1573996625?country=us&ref=1445749546", '_blank');
                                 break;
                         }
+                        break;
                         case Retailer.eBooks:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
