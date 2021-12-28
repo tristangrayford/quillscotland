@@ -10,5 +10,11 @@
     background-color: $background;
     overflow-x: hidden;
     text-align: center;
+    color: $mainfontcolor;;
     }
+}
+
+h1, h2, h3 {
+    font-family: $mainfont;
+    font-variant: small-caps;
 }

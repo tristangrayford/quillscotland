@@ -4,14 +4,17 @@ import MainPage from './Pages/Main/MainPage';
 import reportWebVitals from './reportWebVitals';
 import './App.scss'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AboutPage from './Pages/About/AboutPage';
+import LanguagePage from './Pages/Language/LanguagePage';
+import RecommendationsPage from './Pages/Recommendations/RecommendationsPage';
 
 const routing = (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage/>} />
-        <Route path="/About" element={<MainPage/>} />
-        <Route path="/Language" element={<MainPage/>} />
-        <Route path="/Recommendations" element={<MainPage/>} />
+        <Route path="/About" element={<AboutPage/>} />
+        <Route path="/Languages" element={<LanguagePage/>} />
+        <Route path="/Recommendations" element={<RecommendationsPage/>} />
       </Routes>
     </BrowserRouter>
 )
