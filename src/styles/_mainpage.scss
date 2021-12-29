@@ -25,27 +25,38 @@
     }
 
     .map-section {
+        overflow: auto;
+
         img {
             width: 60%;
             max-width: 500px;
         }
+    }
     
     .map-selected {
-        position: fixed;
+        position: absolute;
+        background: #00000080;
         top: 0;
         left: 0;
-        max-width: none;
-        width: 100%;
-    }
-}
+        overflow: auto;
+        width: calc(100vw - 20px);
+        height: calc(100vh);
 
-@media(max-width: 850px){
-    .map-section {
-        .map-selected {
-            width: 150%;
+        img {
+            max-width: none;
+            height: calc(100% - 20px);
+            width: auto;
         }
     }
-}
+
+
+    @media(max-width: 900px){
+        .map-selected {
+            img {
+                height: 1000px;
+            }
+        }
+    }
 
     @media(max-width: 490px){
         .series-title {
@@ -56,9 +67,11 @@
             img {
                 width: 80%;
             }
+        }
 
-            .map-selected {
-                width: 200%;
+        .map-selected {
+            img {
+                width: auto;
             }
         }
     }

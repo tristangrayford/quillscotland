@@ -57,8 +57,8 @@ function MainPage() {
             </div>
             <h2>Map of Seann Àite</h2>
             <p>Click to see more</p>
-            <div className="map-section">
-                <img className={mapClicked ? "map-selected" : ""} alt="map of Seann Àite" src={map} onClick={() => {setMapClicked(!mapClicked)}} />
+            <div className={mapClicked ? "map-selected map-section" : "map-section"}>
+                <img alt="map of Seann Àite" src={map} onClick={() => {setMapClicked(!mapClicked)}} />
             </div>
             {selected ? <BuyPopup onClose={onClose} ref={buyElement} /> : null}
             </div>

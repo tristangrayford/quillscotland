@@ -13,7 +13,7 @@ class HeaderMenu extends React.Component<{}, {}> {
 
     public render(): JSX.Element {
         return (<div className="header-menu">
-            <img className="header-logo" alt="logo" src={logo} />
+            <NavLink to="/"><img className="header-logo" alt="logo" src={logo} /></NavLink>
             <div className="menu-items">
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/About">About</NavLink>
