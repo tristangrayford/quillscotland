@@ -47,6 +47,7 @@
     }    
 
     @media(max-width: 750px){
-        width: 100%;
+        padding: 20px;
+        width: calc(100% - 40px);
     }  
 }
