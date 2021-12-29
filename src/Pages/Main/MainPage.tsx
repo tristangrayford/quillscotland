@@ -8,6 +8,7 @@ const names = require("../../images/Names of the Dead.png")
 const gift = require("../../images/A Gift of the Sea.png")
 const talesBlock = require("../../images/Tales Block.png")
 const question = require("../../images/Question.png")
+const map = require("../../images/Seann Aite.png")
 
 const whispersDesc = <p>Paid to unearth the fate of the children of the Three Willows, Fiadh expects the work of a predatory fey.<br /><br /> But this was a very different kind of monster who preyed upon the village folk. One that would leave her no choice but to journey into the wilderness beyond.<br /><br /> Experience an adventure in the world of Seann Àite, inspired by the myths and folklore of dark age Scotland.<br /><br /> The dialogue features sections written in the Scots language which is used throughout the series.</p>
 
@@ -23,6 +24,7 @@ const six = <p>The Sixth and final tale. Fiadh finally travels to confront the o
 
 function MainPage() {
     const [selected, setSelected] = useState(false);
+    const [mapClicked, setMapClicked] = useState(false);
 
     const buyElement = useRef<null | BuyPopup>(null);
 
@@ -41,18 +43,25 @@ function MainPage() {
     }
     
     return (<div className="App">
-        <HeaderMenu />
-        <h1>Tristan Gray</h1>
-        <img className="series-title" src={ talesBlock } alt="Tales of Seann Aite"/>
-        <div className="books">
-            <BookItem bookItemContent={whispersDesc} bookItemTitle="Whispers To A Crow" bookItemImage={whispers} onClick={onClick} book={Book.Whispers} />
-            <BookItem bookItemContent={namesDesc} bookItemTitle="Names of the Dead" bookItemImage={names} onClick={onClick} book={Book.Names} />
-            <BookItem bookItemContent={giftDesc} bookItemTitle="A Gift of the Sea" bookItemImage={gift} onClick={onClick} book={Book.Gift} />
-            <BookItem bookItemContent={four} bookItemTitle="Tale No. 4" bookItemImage={question} onClick={onClick} book={Book.None} />
-            <BookItem bookItemContent={five} bookItemTitle="Tale No. 5" bookItemImage={question} onClick={onClick} book={Book.None} />
-            <BookItem bookItemContent={six} bookItemTitle="Tale No. 6" bookItemImage={question} onClick={onClick} book={Book.None} />
-        </div>
-        {selected ? <BuyPopup onClose={onClose} ref={buyElement} /> : null}
+        <div className="main-page">
+            <HeaderMenu />
+            <h1>Tristan Gray</h1>
+            <img className="series-title" src={ talesBlock } alt="Tales of Seann Àite"/>
+            <div className="books">
+                <BookItem bookItemContent={whispersDesc} bookItemTitle="Whispers To A Crow" bookItemImage={whispers} onClick={onClick} book={Book.Whispers} />
+                <BookItem bookItemContent={namesDesc} bookItemTitle="Names of the Dead" bookItemImage={names} onClick={onClick} book={Book.Names} />
+                <BookItem bookItemContent={giftDesc} bookItemTitle="A Gift of the Sea" bookItemImage={gift} onClick={onClick} book={Book.Gift} />
+                <BookItem bookItemContent={four} bookItemTitle="Tale No. 4" bookItemImage={question} onClick={onClick} book={Book.None} />
+                <BookItem bookItemContent={five} bookItemTitle="Tale No. 5" bookItemImage={question} onClick={onClick} book={Book.None} />
+                <BookItem bookItemContent={six} bookItemTitle="Tale No. 6" bookItemImage={question} onClick={onClick} book={Book.None} />
+            </div>
+            <h2>Map of Seann Àite</h2>
+            <p>Click to see more</p>
+            <div className="map-section">
+                <img className={mapClicked ? "map-selected" : ""} alt="map of Seann Àite" src={map} onClick={() => {setMapClicked(!mapClicked)}} />
+            </div>
+            {selected ? <BuyPopup onClose={onClose} ref={buyElement} /> : null}
+            </div>
     </div>)
 }
 

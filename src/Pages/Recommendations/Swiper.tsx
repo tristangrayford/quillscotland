@@ -20,11 +20,11 @@ class Swiper extends React.Component<SwiperProps, SwiperState> {
         this.shift = this.shift.bind(this);
     }
 
-    numberArray = ["first", "second", "third", "forth", "fifth", "sixth", "seventh"];
+    numberArray = ["first", "second", "third", "forth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"];
     
     public render(): JSX.Element {
         return (<div className="swiper">
-            <div className={"swiper-container " + this.numberArray[this.state.indexSelected]} onWheel={this.onScroll}>
+            <div className={"swiper-container " + this.numberArray[this.state.indexSelected]} onWheel={this.onScroll} onClick={() => this.shift(true)}>
                 {this.props.children}
             </div>
             <div className="directions">
@@ -35,7 +35,7 @@ class Swiper extends React.Component<SwiperProps, SwiperState> {
     }
 
     public onScroll(event: WheelEvent<HTMLDivElement>) {
-        event.preventDefault();
+        this.preventDefault(event);
         if (event.deltaY > 0) {
             this.shift(true);
         } else {
@@ -44,10 +44,18 @@ class Swiper extends React.Component<SwiperProps, SwiperState> {
         return false;
     }
 
+    public preventDefault(e: any) {
+    e = e || window.event
+    if (e.preventDefault) {
+      e.preventDefault()
+    }
+    e.returnValue = false
+  }
+
     public shift(right: boolean) {
         const currentIndex = this.state.indexSelected;
         if (right) {
-            if (currentIndex < 6) {
+            if (currentIndex < (this.props.children.length - 1)) {
                 this.setState({ indexSelected: currentIndex + 1 })
             }
         } else {

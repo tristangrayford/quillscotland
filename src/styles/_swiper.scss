@@ -1,20 +1,22 @@
 $mainheight: 400px;
-$mainsubheight: 360px;
-$mainsubmargin: 20px;
+$mainsubheight: 349px;
+$mainsubmargin: 25px;
 
-$midiheight: 280px;
-$midisubheight: 260px;
-$midisubmargin: 10px;
+$midiheight: 260px;
+$midisubheight: 230px;
+$midisubmargin: 15px;
 
-$miniheight: 160px;
-$minisubheight: 145px;
-$minisubmargin: 5px;
+$miniheight: 150px;
+$minisubheight: 130px;
+$minisubmargin: 10px;
 
 .swiper {
     height: 450px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    
+    touch-action: none;
 
     .directions {
         svg {
@@ -24,13 +26,16 @@ $minisubmargin: 5px;
 
     .swiper-container{
         width: 800px;
+        touch-action: none;
     
         div {
             display: none;
             vertical-align: top;
+            touch-action: none;
 
             img {
                 height: $mainheight;
+                touch-action: none;
             }
         }
     }
@@ -54,7 +59,7 @@ $minisubmargin: 5px;
     }
 
     .second {
-        div:nth-child(1) {
+        div:nth-child(1), div:nth-child(3) {
             display: inline-block;
             perspective: 1000px;
             transition: transform 1s;
@@ -62,27 +67,25 @@ $minisubmargin: 5px;
             img {
                 margin-top: $mainsubmargin;
                 height: $mainsubheight;
-                transform: rotateY( -60deg );
             }
         }
         div:nth-child(2) {
             display: inline-block;
         }
-        div:nth-child(3) {
-            display: inline-block;
-            perspective: 1000px;
-            transition: transform 1s;
-            transform-style: preserve-3d;
+        div:nth-child(1) {
             img {
-                margin-top: $mainsubmargin;
-                height: $mainsubheight;
+                transform: rotateY( -60deg );
+            }
+        }
+        div:nth-child(3) {
+            img {
                 transform: rotateY( 60deg );
             }
         }
     }
 
     .third {
-        div:nth-child(2) {
+        div:nth-child(2), div:nth-child(4) {
             display: inline-block;
             perspective: 1000px;
             transition: transform 1s;
@@ -90,27 +93,25 @@ $minisubmargin: 5px;
             img {
                 margin-top: $mainsubmargin;
                 height: $mainsubheight;
-                transform: rotateY( -60deg );
             }
         }
         div:nth-child(3) {
             display: inline-block;
         }
-        div:nth-child(4) {
-            display: inline-block;
-            perspective: 1000px;
-            transition: transform 1s;
-            transform-style: preserve-3d;
+        div:nth-child(2) {
             img {
-                margin-top: $mainsubmargin;
-                height: $mainsubheight;
+                transform: rotateY( -60deg );
+            }
+        }
+        div:nth-child(4) {
+            img {
                 transform: rotateY( 60deg );
             }
         }
     }
 
     .forth {
-        div:nth-child(3) {
+        div:nth-child(3), div:nth-child(5) {
             display: inline-block;
             perspective: 1000px;
             transition: transform 1s;
@@ -118,27 +119,25 @@ $minisubmargin: 5px;
             img {
                 margin-top: $mainsubmargin;
                 height: $mainsubheight;
-                transform: rotateY( -60deg );
             }
         }
         div:nth-child(4) {
             display: inline-block;
         }
-        div:nth-child(5) {
-            display: inline-block;
-            perspective: 1000px;
-            transition: transform 1s;
-            transform-style: preserve-3d;
+        div:nth-child(3) {
             img {
-                margin-top: $mainsubmargin;
-                height: $mainsubheight;
+                transform: rotateY( -60deg );
+            }
+        }
+        div:nth-child(5) {
+            img {
                 transform: rotateY( 60deg );
             }
         }
     }
 
     .fifth {
-        div:nth-child(4) {
+        div:nth-child(4), div:nth-child(6) {
             display: inline-block;
             perspective: 1000px;
             transition: transform 1s;
@@ -146,27 +145,25 @@ $minisubmargin: 5px;
             img {
                 margin-top: $mainsubmargin;
                 height: $mainsubheight;
-                transform: rotateY( -60deg );
             }
         }
         div:nth-child(5) {
             display: inline-block;
         }
-        div:nth-child(6) {
-            display: inline-block;
-            perspective: 1000px;
-            transition: transform 1s;
-            transform-style: preserve-3d;
+        div:nth-child(4) {
             img {
-                margin-top: $mainsubmargin;
-                height: $mainsubheight;
+                transform: rotateY( -60deg );
+            }
+        }
+        div:nth-child(6) {
+            img {
                 transform: rotateY( 60deg );
             }
         }
     }
 
     .sixth {
-        div:nth-child(5) {
+        div:nth-child(5), div:nth-child(7) {
             display: inline-block;
             perspective: 1000px;
             transition: transform 1s;
@@ -174,27 +171,101 @@ $minisubmargin: 5px;
             img {
                 margin-top: $mainsubmargin;
                 height: $mainsubheight;
-                transform: rotateY( -60deg );
             }
         }
         div:nth-child(6) {
             display: inline-block;
         }
-        div:nth-child(7) {
-            display: inline-block;
-            perspective: 1000px;
-            transition: transform 1s;
-            transform-style: preserve-3d;
+        div:nth-child(5) {
             img {
-                margin-top: $mainsubmargin;
-                height: $mainsubheight;
+                transform: rotateY( -60deg );
+            }
+        }
+        div:nth-child(7) {
+            img {
                 transform: rotateY( 60deg );
             }
         }
     }
 
     .seventh {
+        div:nth-child(6), div:nth-child(8) {
+            display: inline-block;
+            perspective: 1000px;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            img {
+                margin-top: $mainsubmargin;
+                height: $mainsubheight;
+            }
+        }
+        div:nth-child(7) {
+            display: inline-block;
+        }
         div:nth-child(6) {
+            img {
+                transform: rotateY( -60deg );
+            }
+        }
+        div:nth-child(8) {
+            img {
+                transform: rotateY( 60deg );
+            }
+        }
+    }
+
+    .eighth {
+        div:nth-child(7), div:nth-child(9) {
+            display: inline-block;
+            perspective: 1000px;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            img {
+                margin-top: $mainsubmargin;
+                height: $mainsubheight;
+            }
+        }
+        div:nth-child(8) {
+            display: inline-block;
+        }
+        div:nth-child(7) {
+            img {
+                transform: rotateY( -60deg );
+            }
+        }
+        div:nth-child(9) {
+            img {
+                transform: rotateY( 60deg );
+            }
+        }
+    }
+    .ninth {
+        div:nth-child(8), div:nth-child(10) {
+            display: inline-block;
+            perspective: 1000px;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            img {
+                margin-top: $mainsubmargin;
+                height: $mainsubheight;
+            }
+        }
+        div:nth-child(9) {
+            display: inline-block;
+        }
+        div:nth-child(8) {
+            img {
+                transform: rotateY( -60deg );
+            }
+        }
+        div:nth-child(10) {
+            img {
+                transform: rotateY( 60deg );
+            }
+        }
+    }
+    .tenth {
+        div:nth-child(9) {
             display: inline-block;
             perspective: 1000px;
             transition: transform 1s;
@@ -205,7 +276,7 @@ $minisubmargin: 5px;
                 transform: rotateY( -60deg );
             }
         }
-        div:nth-child(7) {
+        div:nth-child(10) {
             display: inline-block;
         }
     }
@@ -237,13 +308,7 @@ $minisubmargin: 5px;
     }
 
     .second {
-        div:nth-child(1) {
-            img {
-                margin-top: $midisubmargin;
-                height: $midisubheight;
-            }
-        }
-        div:nth-child(3) {
+        div:nth-child(1), div:nth-child(3) {
             img {
                 margin-top: $midisubmargin;
                 height: $midisubheight;
@@ -252,13 +317,7 @@ $minisubmargin: 5px;
     }
 
     .third {
-        div:nth-child(2) {
-            img {
-                margin-top: $midisubmargin;
-                height: $midisubheight;
-            }
-        }
-        div:nth-child(4) {
+        div:nth-child(2), div:nth-child(4) {
             img {
                 margin-top: $midisubmargin;
                 height: $midisubheight;
@@ -267,13 +326,7 @@ $minisubmargin: 5px;
     }
 
     .forth {
-        div:nth-child(3) {
-            img {
-                margin-top: $midisubmargin;
-                height: $midisubheight;
-            }
-        }
-        div:nth-child(5) {
+        div:nth-child(3), div:nth-child(5) {
             img {
                 margin-top: $midisubmargin;
                 height: $midisubheight;
@@ -282,13 +335,7 @@ $minisubmargin: 5px;
     }
 
     .fifth {
-        div:nth-child(4) {
-            img {
-                margin-top: $midisubmargin;
-                height: $midisubheight;
-            }
-        }
-        div:nth-child(6) {
+        div:nth-child(4), div:nth-child(6) {
             img {
                 margin-top: $midisubmargin;
                 height: $midisubheight;
@@ -297,13 +344,7 @@ $minisubmargin: 5px;
     }
 
     .sixth {
-        div:nth-child(5) {
-            img {
-                margin-top: $midisubmargin;
-                height: $midisubheight;
-            }
-        }
-        div:nth-child(7) {
+        div:nth-child(5), div:nth-child(7) {
             img {
                 margin-top: $midisubmargin;
                 height: $midisubheight;
@@ -312,7 +353,31 @@ $minisubmargin: 5px;
     }
 
     .seventh {
-        div:nth-child(6) {
+        div:nth-child(6), div:nth-child(8) {
+            img {
+                margin-top: $midisubmargin;
+                height: $midisubheight;
+            }
+        }
+    }
+    .eighth {
+        div:nth-child(7), div:nth-child(9) {
+            img {
+                margin-top: $midisubmargin;
+                height: $midisubheight;
+            }
+        }
+    }
+    .ninth {
+        div:nth-child(8), div:nth-child(10) {
+            img {
+                margin-top: $midisubmargin;
+                height: $midisubheight;
+            }
+        }
+    }
+    .tenth {
+        div:nth-child(9) {
             img {
                 margin-top: $midisubmargin;
                 height: $midisubheight;
@@ -348,13 +413,7 @@ $minisubmargin: 5px;
     }
 
     .second {
-        div:nth-child(1) {
-            img {
-                margin-top: $minisubmargin;
-                height: $minisubheight;
-            }
-        }
-        div:nth-child(3) {
+        div:nth-child(1), div:nth-child(3) {
             img {
                 margin-top: $minisubmargin;
                 height: $minisubheight;
@@ -363,13 +422,7 @@ $minisubmargin: 5px;
     }
 
     .third {
-        div:nth-child(2) {
-            img {
-                margin-top: $minisubmargin;
-                height: $minisubheight;
-            }
-        }
-        div:nth-child(4) {
+        div:nth-child(2), div:nth-child(4) {
             img {
                 margin-top: $minisubmargin;
                 height: $minisubheight;
@@ -378,13 +431,7 @@ $minisubmargin: 5px;
     }
 
     .forth {
-        div:nth-child(3) {
-            img {
-                margin-top: $minisubmargin;
-                height: $minisubheight;
-            }
-        }
-        div:nth-child(5) {
+        div:nth-child(3), div:nth-child(5) {
             img {
                 margin-top: $minisubmargin;
                 height: $minisubheight;
@@ -393,28 +440,16 @@ $minisubmargin: 5px;
     }
 
     .fifth {
-        div:nth-child(4) {
+        div:nth-child(4), div:nth-child(6) {
             img {
                 margin-top: $minisubmargin;
-                height: $minisubheight;
-            }
-        }
-        div:nth-child(6) {
-            img {
-                margin-top: $midisubmargin;
                 height: $minisubheight;
             }
         }
     }
 
     .sixth {
-        div:nth-child(5) {
-            img {
-                margin-top: $minisubmargin;
-                height: $minisubheight;
-            }
-        }
-        div:nth-child(7) {
+        div:nth-child(5), div:nth-child(7) {
             img {
                 margin-top: $minisubmargin;
                 height: $minisubheight;
@@ -423,7 +458,31 @@ $minisubmargin: 5px;
     }
 
     .seventh {
-        div:nth-child(6) {
+        div:nth-child(6), div:nth-child(8) {
+            img {
+                margin-top: $minisubmargin;
+                height: $minisubheight;
+            }
+        }
+    }
+    .eighth {
+        div:nth-child(7), div:nth-child(9) {
+            img {
+                margin-top: $minisubmargin;
+                height: $minisubheight;
+            }
+        }
+    }
+    .ninth {
+        div:nth-child(8), div:nth-child(10) {
+            img {
+                margin-top: $minisubmargin;
+                height: $minisubheight;
+            }
+        }
+    }
+    .tenth {
+        div:nth-child(9) {
             img {
                 margin-top: $minisubmargin;
                 height: $minisubheight;

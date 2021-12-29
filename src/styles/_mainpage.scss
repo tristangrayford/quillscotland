@@ -1,31 +1,65 @@
-        .series-title {
-            width: 65%;
-            max-width: 800px;
-        }
+.main-page{
+    .series-title {
+        width: 65%;
+        max-width: 800px;
+    }
 
-        .books {
-            .book-item {
-                display: inline-block;
-                margin: 20px;
-                color: $mainfontcolor;
-                width: 250px;
-                height: 650px;
-                vertical-align: top;
+    .books {
+        .book-item {
+            display: inline-block;
+            margin: 20px;
+            color: $mainfontcolor;
+            width: 250px;
+            vertical-align: top;
 
-                h3 {
-                    font-weight: 100;
-                    font-size: 18px;
-                    font-family: $mainfont;
-                }
+            h3 {
+                font-weight: 100;
+                font-size: 18px;
+                font-family: $mainfont;
+            }
 
-                img {
-                    height: 250px;
-                }
+            img {
+                height: 250px;
             }
         }
+    }
+
+    .map-section {
+        img {
+            width: 60%;
+            max-width: 500px;
+        }
+    
+    .map-selected {
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media(max-width: 850px){
+    .map-section {
+        .map-selected {
+            width: 150%;
+        }
+    }
+}
 
     @media(max-width: 490px){
-            .series-title {
-                width: 100%;
+        .series-title {
+            width: 100%;
+        }
+
+        .map-section {
+            img {
+                width: 80%;
             }
+
+            .map-selected {
+                width: 200%;
+            }
+        }
     }
+}

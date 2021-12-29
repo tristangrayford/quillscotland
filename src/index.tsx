@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AboutPage from './Pages/About/AboutPage';
 import LanguagePage from './Pages/Language/LanguagePage';
 import RecommendationsPage from './Pages/Recommendations/RecommendationsPage';
+import OtherWritingPage from './Pages/OtherWriting/OtherWritingPage';
 
 const routing = (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const routing = (
         <Route path="/About" element={<AboutPage/>} />
         <Route path="/Languages" element={<LanguagePage/>} />
         <Route path="/Recommendations" element={<RecommendationsPage/>} />
+        <Route path="/Writing" element={<OtherWritingPage/>} />
       </Routes>
     </BrowserRouter>
 )
