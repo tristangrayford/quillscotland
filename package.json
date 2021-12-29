@@ -73,7 +73,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && COPY \"CNAME\" \"./build/CNAME\"",
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

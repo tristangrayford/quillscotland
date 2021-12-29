@@ -33,35 +33,35 @@ function RecommendationsPage() {
   const books = [
     <div key="dragonbone"><img src={dragonbone} alt="The Dragonbone Chair" /></div>,
     <div key="magician"><img src={magician} alt="Magician"/></div>,
-    <div key="nightwatch"><img src={nightwatch} alt="Magician" /></div>,
-    <div key="fifthseason"><img src={fifthseason} alt="Magician" /></div>,
-    <div key="bonewitch"><img src={bonewitch} alt="Magician" /></div>,
-    <div key="daughter"><img src={daughter} alt="Magician" /></div>,
-    <div key="lastwish"><img src={lastwish} alt="Magician" /></div>,
+    <div key="nightwatch"><img src={nightwatch} alt="Night Watch" /></div>,
+    <div key="fifthseason"><img src={fifthseason} alt="The Fifth Season" /></div>,
+    <div key="bonewitch"><img src={bonewitch} alt="The Bone Witch" /></div>,
+    <div key="daughter"><img src={daughter} alt="Daughter of the Empire" /></div>,
+    <div key="lastwish"><img src={lastwish} alt="The Last Wish" /></div>,
   ]
 
   const graphicNovels = [
-    <div key="monstress"><img src={monstress} alt="The Dragonbone Chair" /></div>,
-    <div key="die"><img src={die} alt="Magician"/></div>,
-    <div key="highesthouse"><img src={highesthouse} alt="Magician" /></div>,
-    <div key="coda"><img src={coda} alt="Magician" /></div>,
-    <div key="isola"><img src={isola} alt="Magician" /></div>,
-    <div key="sandman"><img src={sandman} alt="Magician" /></div>,
-    <div key="reaver"><img src={reaver} alt="Magician" /></div>,
-    <div key="ratqueens"><img src={ratqueens} alt="Magician" /></div>,
+    <div key="monstress"><img src={monstress} alt="Monstress" /></div>,
+    <div key="die"><img src={die} alt="DIE"/></div>,
+    <div key="highesthouse"><img src={highesthouse} alt="The Highest House" /></div>,
+    <div key="coda"><img src={coda} alt="Coda" /></div>,
+    <div key="isola"><img src={isola} alt="Isola" /></div>,
+    <div key="sandman"><img src={sandman} alt="Sandman" /></div>,
+    <div key="reaver"><img src={reaver} alt="Reaver" /></div>,
+    <div key="ratqueens"><img src={ratqueens} alt="Rat Queens" /></div>,
   ]
 
   const games = [
-    <div key="horizon"><img src={horizon} alt="The Dragonbone Chair" /></div>,
-    <div key="journey"><img src={journey} alt="journey"/></div>,
-    <div key="hollow"><img src={hollow} alt="Magician" /></div>,
-    <div key="witcher"><img src={witcher} alt="witcher" /></div>,
-    <div key="godofwar"><img src={godofwar} alt="Magician" /></div>,
-    <div key="hellblade"><img src={hellblade} alt="Magician" /></div>,
-    <div key="ori"><img src={ori} alt="Magician" /></div>,
-    <div key="jedi"><img src={jedi} alt="Magician" /></div>,
-    <div key="control"><img src={control} alt="Magician" /></div>,
-    <div key="shadowofwar"><img src={shadowofwar} alt="Magician" /></div>,
+    <div key="horizon"><img src={horizon} alt="Horizon Zero Dawn" /></div>,
+    <div key="journey"><img src={journey} alt="Journey"/></div>,
+    <div key="hollow"><img src={hollow} alt="Hollow Knight" /></div>,
+    <div key="witcher"><img src={witcher} alt="The Witcher 3" /></div>,
+    <div key="godofwar"><img src={godofwar} alt="God of War 2018" /></div>,
+    <div key="hellblade"><img src={hellblade} alt="Hellblade: Senua's Sacrifice" /></div>,
+    <div key="ori"><img src={ori} alt="Ori Duology" /></div>,
+    <div key="jedi"><img src={jedi} alt="Jedi: Fallen Order" /></div>,
+    <div key="control"><img src={control} alt="Control" /></div>,
+    <div key="shadowofwar"><img src={shadowofwar} alt="Middle Earth: Shadow of War" /></div>,
   ]
     
     return (<div className="App">
