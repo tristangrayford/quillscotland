@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import MainPage from './Pages/Main/MainPage';
 import reportWebVitals from './reportWebVitals';
 import './App.scss'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import AboutPage from './Pages/About/AboutPage';
 import LanguagePage from './Pages/Language/LanguagePage';
 import RecommendationsPage from './Pages/Recommendations/RecommendationsPage';
 import OtherWritingPage from './Pages/OtherWriting/OtherWritingPage';
 
 const routing = (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MainPage/>} />
         <Route path="/About" element={<AboutPage/>} />
@@ -18,7 +18,7 @@ const routing = (
         <Route path="/Recommendations" element={<RecommendationsPage/>} />
         <Route path="/Writing" element={<OtherWritingPage/>} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 )
 
 ReactDOM.render(routing, document.getElementById('root')
