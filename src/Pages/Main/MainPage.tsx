@@ -6,6 +6,7 @@ import BookItem from "./BookItem";
 const whispers = require("../../images/Portrait Whispers.png")
 const names = require("../../images/Names of the Dead.png")
 const gift = require("../../images/A Gift of the Sea.png")
+const thread = require("../../images/The Woven Thread.png")
 const talesBlock = require("../../images/Tales Block.png")
 const question = require("../../images/Question.png")
 const map = require("../../images/Seann Aite.png")
@@ -16,7 +17,7 @@ const namesDesc = <p>Years after her discoveries at the village of Three Willows
 
 const giftDesc = <p>Continuing her travels along the coast of Seann Àite, Fiadh continues to ply her trade facing dangers of magical and monstrous origin for those who can pay.<br /><br /> Now pursued by a shadowy order and with a new companion at her side, Fiadh has a chance to unveil some of the secrets of her past.<br /><br /> But to leave Fiadh must make a deal with the sea itself to survive and return to land bearing a relic of another age.</p>
 
-const four = <p>The Fourth Tale. Arriving at the dockyard town of Kempe Fell, Fiadh must handle the demands of a powerful being that claims what it had lost... a claim no one can remember.</p>
+const four = <p>COMING MARCH 2022: <br /><br /> A butcher haunts the crags over Kempe Fell. A being from another time and another place, hunting for a spirit that is no longer here.</p>
 
 const five = <p>The Fifth Tale. The tale of Caerdrich will be told by a diminuative storyteller, as Fiadh and Annis seek the only way to find the Red Raven - A wish.</p>
 
@@ -51,7 +52,7 @@ function MainPage() {
                 <BookItem bookItemContent={whispersDesc} bookItemTitle="Whispers To A Crow" bookItemImage={whispers} onClick={onClick} book={Book.Whispers} />
                 <BookItem bookItemContent={namesDesc} bookItemTitle="Names of the Dead" bookItemImage={names} onClick={onClick} book={Book.Names} />
                 <BookItem bookItemContent={giftDesc} bookItemTitle="A Gift of the Sea" bookItemImage={gift} onClick={onClick} book={Book.Gift} />
-                <BookItem bookItemContent={four} bookItemTitle="Tale No. 4" bookItemImage={question} onClick={onClick} book={Book.None} />
+                <BookItem bookItemContent={four} bookItemTitle="Tale No. 4" bookItemImage={thread} onClick={onClick} book={Book.None} />
                 <BookItem bookItemContent={five} bookItemTitle="Tale No. 5" bookItemImage={question} onClick={onClick} book={Book.None} />
                 <BookItem bookItemContent={six} bookItemTitle="Tale No. 6" bookItemImage={question} onClick={onClick} book={Book.None} />
             </div>
