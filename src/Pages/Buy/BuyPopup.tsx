@@ -107,6 +107,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Gift:
                                 window.open("https://www.amazon.co.uk/gp/product/B097NRDFT8", '_blank');
                                 break;
+                            case Book.Thread:
+                                window.open("https://www.amazon.co.uk/dp/B09WB2R4PH", '_blank');
+                                break;
                         }
                         break;
                     case Retailer.Kobo:
@@ -174,6 +177,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 break;
                         case Book.Gift:
                                 window.open("https://www.amazon.co.uk/gp/product/B097NRDFT8", '_blank');
+                                break;
+                        case Book.Thread:
+                                window.open("https://www.amazon.com/dp/B09WB2R4PH", '_blank');
                                 break;
                         }
                         break;

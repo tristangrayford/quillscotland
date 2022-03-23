@@ -2,5 +2,6 @@ export enum Book {
     None,
     Whispers,
     Names,
-    Gift
+    Gift,
+    Thread
 }
