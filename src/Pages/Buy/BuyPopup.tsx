@@ -123,6 +123,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Gift:
                                 window.open("https://www.kobo.com/gb/en/ebook/a-gift-of-the-sea", '_blank');
                                 break;
+                                case Book.Thread:
+                                window.open("https://www.kobo.com/gb/en/ebook/the-woven-thread-3", '_blank');
+                                break;
                         }
                         break;
                         case Retailer.AppleBooks:
@@ -135,6 +138,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 break;
                             case Book.Gift:
                                 window.open("https://tools.applemediaservices.com/book/1573996625?country=gb&ref=1445749546", '_blank');
+                                break;
+                                case Book.Thread:
+                                window.open("https://tools.applemediaservices.com/book/1617725306?country=gb&ref=1445749546", '_blank');
                                 break;
                         }
                         break;
@@ -149,6 +155,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Gift:
                                 window.open("https://www.waterstones.com/book/a-gift-of-the-sea/tristan-gray/9781838485443", '_blank');
                                 break;
+                                case Book.Gift:
+                                window.open("https://www.waterstones.com/book/the-woven-thread/tristan-gray/9781838485467", '_blank');
+                                break;
                         }
                         break;
                         case Retailer.eBooks:
@@ -161,6 +170,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 break;
                             case Book.Gift:
                                 window.open("https://www.ebooks.com/en-gb/book/210324351/a-gift-of-the-sea/tristan-gray/", '_blank');
+                                break;
+                                case Book.Thread:
+                                window.open("https://www.ebooks.com/en-gb/book/210533335/the-woven-thread/tristan-gray/", '_blank');
                                 break;
                             }
                 }
@@ -194,6 +206,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Gift:
                                 window.open("https://www.barnesandnoble.com/w/a-gift-of-the-sea-tristan-gray/1139740469", '_blank');
                                 break;
+                                case Book.Gift:
+                                window.open("https://www.barnesandnoble.com/w/the-woven-thread-tristan-gray/1141287390?ean=9781838485467", '_blank');
+                                break;
                         }
                         break;
                     case Retailer.Kobo:
@@ -206,6 +221,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 break;
                             case Book.Gift:
                                 window.open("https://www.kobo.com/us/en/ebook/a-gift-of-the-sea", '_blank');
+                                break;
+                                case Book.Gift:
+                                window.open("https://www.kobo.com/us/en/ebook/the-woven-thread-3", '_blank');
                                 break;
                         }
                         break;
@@ -220,6 +238,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Gift:
                                 window.open("https://tools.applemediaservices.com/book/1573996625?country=us&ref=1445749546", '_blank');
                                 break;
+                                case Book.Gift:
+                                window.open("https://tools.applemediaservices.com/book/1617725306?country=us&ref=1445749546", '_blank');
+                                break;
                         }
                         break;
                         case Retailer.eBooks:
@@ -232,6 +253,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                                 break;
                             case Book.Gift:
                                 window.open("https://www.ebooks.com/en-us/book/210324351/a-gift-of-the-sea/tristan-gray/", '_blank');
+                                break;
+                                case Book.Gift:
+                                window.open("https://www.ebooks.com/en-us/book/210533335/the-woven-thread/tristan-gray/", '_blank');
                                 break;
                             }
                         }
