@@ -19,6 +19,7 @@
             width: 50%;
             color: $mainfontcolor;
             border: none;
+            cursor: pointer;
         }
 
         h2 {
@@ -28,6 +29,7 @@
         .region {
             display: inline-block;
             margin: 20px;
+            cursor: pointer;
 
             img {
                 height: 150px;
@@ -40,6 +42,7 @@
             margin: 10px;
             padding: 5px;
             border-radius: 10px;
+            cursor: pointer;
 
             img {
                 height: 80px;

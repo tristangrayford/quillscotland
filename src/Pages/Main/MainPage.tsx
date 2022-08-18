@@ -48,6 +48,7 @@ function MainPage() {
             <HeaderMenu />
             <h1>Tristan Gray</h1>
             <img className="series-title" src={ talesBlock } alt="Tales of Seann Àite"/>
+            <h2>Click on the entry below to bring up retailer outlets for the US and UK</h2>
             <div className="books">
                 <BookItem bookItemContent={whispersDesc} bookItemTitle="Whispers To A Crow" bookItemImage={whispers} onClick={onClick} book={Book.Whispers} />
                 <BookItem bookItemContent={namesDesc} bookItemTitle="Names of the Dead" bookItemImage={names} onClick={onClick} book={Book.Names} />
