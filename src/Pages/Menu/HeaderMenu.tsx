@@ -30,7 +30,7 @@ class HeaderMenu extends React.Component<{}, {}> {
                 <a target="_blank" rel="noreferrer" href="https://twitter.com/TGrayWrites">
                     <img src={Twitter} alt="Twitter" />
                 </a>
-                <a target="_blank"  rel="me noreferrer" href="https://mastodon.scot/@tree">
+                <a rel="me" href="https://mastodon.scot/@tree">
                     <img src={Mastodon} alt="Mastodon" />
                 </a>
                 <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@tgraywrites">
