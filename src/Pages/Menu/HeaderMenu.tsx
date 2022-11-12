@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom'
 const Facebook = require("../../images/Facebook.png")
 const Twitter = require("../../images/Twitter.png")
 const Goodreads = require("../../images/Goodreads.png")
+const Tiktok = require("../../images/Tiktok.png")
+const Mastodon = require("../../images/mastodon.png")
 
 const logo = require("../../images/TG Transparent Background.png")
 
@@ -27,6 +29,12 @@ class HeaderMenu extends React.Component<{}, {}> {
                 </a>
                 <a target="_blank" rel="noreferrer" href="https://twitter.com/TGrayWrites">
                     <img src={Twitter} alt="Twitter" />
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://mastodon.scot/@tree">
+                    <img src={Mastodon} alt="Mastodon" />
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@tgraywrites">
+                    <img src={Tiktok} alt="Tiktok" />
                 </a>
                 <a target="_blank" rel="noreferrer" href="https://www.goodreads.com/author/show/20606471.Tristan_Gray">
                     <img src={Goodreads} alt="Goodreads" />
