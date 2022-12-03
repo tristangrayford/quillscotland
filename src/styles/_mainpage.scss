@@ -5,6 +5,8 @@
     }
 
     .books {
+        padding-right: 150px;
+
         .book-item {
             display: inline-block;
             margin: 20px;
@@ -74,6 +76,25 @@
             img {
                 width: auto;
             }
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .main-page {
+        padding-bottom: 150px;
+        
+        .books {
+            padding-right: 0;
+        }
+    }
+}
+
+@media(min-width: 900px){
+    .books {
+        h2 {
+            padding-left: 100px;
+            width: calc(100% - 100px);
         }
     }
 }

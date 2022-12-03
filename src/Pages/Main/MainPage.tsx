@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Book } from "../../dtos/enums";
 import BuyPopup from "../Buy/BuyPopup";
+import BuyModal from "../BuyModal/BuyModal";
 import HeaderMenu from "../Menu/HeaderMenu";
 import BookItem from "./BookItem";
 const whispers = require("../../images/Portrait Whispers.png")
@@ -42,14 +43,19 @@ function MainPage() {
     const onClose = () => {
         setSelected(false);
     }
+
+    const openBuy = () => {
+        onClick(Book.Whispers);
+    }
     
     return (<div className="App">
         <div className="main-page">
             <HeaderMenu />
+            <BuyModal onClick={openBuy}/>
             <h1>Tristan Gray</h1>
             <img className="series-title" src={ talesBlock } alt="Tales of Seann Àite"/>
-            <h2>Click on the entry below to bring up retailer outlets for the US and UK</h2>
             <div className="books">
+                <h2>Click on the entry below to bring up retailer outlets for the US and UK</h2>
                 <BookItem bookItemContent={whispersDesc} bookItemTitle="Whispers To A Crow" bookItemImage={whispers} onClick={onClick} book={Book.Whispers} />
                 <BookItem bookItemContent={namesDesc} bookItemTitle="Names of the Dead" bookItemImage={names} onClick={onClick} book={Book.Names} />
                 <BookItem bookItemContent={giftDesc} bookItemTitle="A Gift of the Sea" bookItemImage={gift} onClick={onClick} book={Book.Gift} />

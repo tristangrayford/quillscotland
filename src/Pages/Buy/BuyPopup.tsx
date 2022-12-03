@@ -72,7 +72,7 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                         </div>}
                     </> : <>
                         <h2>Select Your Region</h2>
-                        <div className="region" onClick={() => this.onSelect(Region.UK)}>
+                        <div className="region scot" onClick={() => this.onSelect(Region.UK)}>
                             <img src={uk} alt="United Kingdom" />
                         </div>
                         <div className="region" onClick={() => this.onSelect(Region.USA)}>
