@@ -28,16 +28,20 @@ const ori = require("../../images/Ori.jpg")
 const jedi = require("../../images/Jedi Fallen Order.jpg")
 const control = require("../../images/Control.jpg")
 const shadowofwar = require("../../images/Shadow of War.jpg")
+const gideon = require("../../images/Gideon.jpg")
+const priory = require("../../images/Priory.jpg")
 
 function RecommendationsPage() {
   const books = [
     <div key="dragonbone"><img src={dragonbone} alt="The Dragonbone Chair" /></div>,
+    <div key="gidon"><img src={gideon} alt="Gideon the Ninth" /></div>,
     <div key="magician"><img src={magician} alt="Magician"/></div>,
+    <div key="lastwish"><img src={lastwish} alt="The Last Wish" /></div>,
     <div key="nightwatch"><img src={nightwatch} alt="Night Watch" /></div>,
     <div key="fifthseason"><img src={fifthseason} alt="The Fifth Season" /></div>,
     <div key="bonewitch"><img src={bonewitch} alt="The Bone Witch" /></div>,
+    <div key="priory"><img src={priory} alt="The Priory of the Orange Tree" /></div>,
     <div key="daughter"><img src={daughter} alt="Daughter of the Empire" /></div>,
-    <div key="lastwish"><img src={lastwish} alt="The Last Wish" /></div>,
   ]
 
   const graphicNovels = [
