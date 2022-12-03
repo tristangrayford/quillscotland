@@ -24,6 +24,7 @@ class Swiper extends React.Component<SwiperProps, SwiperState> {
     
     public render(): JSX.Element {
         return (<div className="swiper">
+            <div className="left-click" onClick={(e) => this.clickBack(e)}></div>
             <div className={"swiper-container " + this.numberArray[this.state.indexSelected]} onWheel={this.onScroll} onClick={() => this.shift(true)}>
                 {this.props.children}
             </div>
@@ -34,7 +35,7 @@ class Swiper extends React.Component<SwiperProps, SwiperState> {
         </div>)
     }
 
-    public onScroll(event: WheelEvent<HTMLDivElement>) {
+    private onScroll(event: WheelEvent<HTMLDivElement>) {
         this.preventDefault(event);
         if (event.deltaY > 0) {
             this.shift(true);
@@ -44,15 +45,20 @@ class Swiper extends React.Component<SwiperProps, SwiperState> {
         return false;
     }
 
-    public preventDefault(e: any) {
-    e = e || window.event
-    if (e.preventDefault) {
-      e.preventDefault()
+    private clickBack(event: any) {
+        event.stopPropagation();
+        this.shift(false);
     }
-    e.returnValue = false
-  }
 
-    public shift(right: boolean) {
+    private preventDefault(e: any) {
+        e = e || window.event
+        if (e.preventDefault) {
+            e.preventDefault()
+        }
+        e.returnValue = false
+    }
+
+    private shift(right: boolean) {
         const currentIndex = this.state.indexSelected;
         if (right) {
             if (currentIndex < (this.props.children.length - 1)) {

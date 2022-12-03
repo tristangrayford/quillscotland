@@ -24,6 +24,13 @@ $minisubmargin: 10px;
         }
     }
 
+    .left-click {
+        z-index: 2;
+        height: 400px;
+        position: absolute;
+        width: 300px;
+    }
+
     .swiper-container{
         width: 800px;
         touch-action: none;
