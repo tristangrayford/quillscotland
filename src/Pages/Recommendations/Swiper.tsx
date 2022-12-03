@@ -25,7 +25,7 @@ class Swiper extends React.Component<SwiperProps, SwiperState> {
     public render(): JSX.Element {
         return (<div className="swiper">
             <div className="left-click" onClick={(e) => this.clickBack(e)}></div>
-            <div className={"swiper-container " + this.numberArray[this.state.indexSelected]} onWheel={this.onScroll} onClick={() => this.shift(true)}>
+            <div className={"swiper-container " + this.numberArray[this.state.indexSelected]} onClick={() => this.shift(true)}>
                 {this.props.children}
             </div>
             <div className="directions">
