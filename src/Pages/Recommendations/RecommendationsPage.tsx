@@ -34,7 +34,7 @@ const priory = require("../../images/Priory.jpg")
 function RecommendationsPage() {
   const books = [
     <div key="dragonbone"><img src={dragonbone} alt="The Dragonbone Chair" /></div>,
-    <div key="gidon"><img src={gideon} alt="Gideon the Ninth" /></div>,
+    <div key="gideon"><img src={gideon} alt="Gideon the Ninth" /></div>,
     <div key="magician"><img src={magician} alt="Magician"/></div>,
     <div key="lastwish"><img src={lastwish} alt="The Last Wish" /></div>,
     <div key="nightwatch"><img src={nightwatch} alt="Night Watch" /></div>,
