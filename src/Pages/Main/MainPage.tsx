@@ -49,7 +49,7 @@ function MainPage() {
     }
     
     return (<div className="App">
-        <div className="main-page">
+        <div className={"main-page" + (selected || mapClicked ? " popup-active" : "" )} >
             <HeaderMenu />
             <BuyModal onClick={openBuy}/>
             <h1>Tristan Gray</h1>
@@ -65,9 +65,9 @@ function MainPage() {
             </div>
             <h2>Map of Seann Àite</h2>
             <p>Click to see more</p>
-            <div className={mapClicked ? "map-selected map-section" : "map-section"}>
+            <button className={mapClicked ? "map-selected map-section" : "map-section"}>
                 <img alt="map of Seann Àite" src={map} onClick={() => {setMapClicked(!mapClicked)}} />
-            </div>
+            </button>
             {selected ? <BuyPopup onClose={onClose} ref={buyElement} /> : null}
             </div>
     </div>)

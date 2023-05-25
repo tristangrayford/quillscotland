@@ -1,4 +1,9 @@
 .main-page{
+    button {
+        background: none;
+        border: none;
+    }
+
     .series-title {
         width: 65%;
         max-width: 800px;
@@ -42,7 +47,7 @@
         top: 0;
         left: 0;
         overflow: auto;
-        width: calc(100vw - 20px);
+        width: 100vw;
         height: calc(100vh);
 
         img {
@@ -78,6 +83,11 @@
             }
         }
     }
+}
+
+.popup-active {
+    height: 100vh;
+    overflow: hidden;
 }
 
 @media(max-width: 900px){

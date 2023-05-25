@@ -20,6 +20,8 @@
             color: $mainfontcolor;
             border: none;
             cursor: pointer;
+            display: block;
+            margin-left: 25%;
         }
 
         h2 {
@@ -56,6 +58,32 @@
 
             img {
                 height: 80px;
+            }
+        }
+    }
+
+    @media(max-width: 600px){
+        .regions {
+            width: 400px;
+            margin-left: calc(50% - 200px);
+
+            .retailer {
+                img {
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 400px){
+        .regions {
+            width: 250px;
+            margin-left: calc(50% - 125px);
+
+            .retailer {
+                img {
+                    height: 40px;
+                }
             }
         }
     }

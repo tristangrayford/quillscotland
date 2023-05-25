@@ -24,7 +24,7 @@ class HeaderMenu extends React.Component<{}, {}> {
                 <NavLink to="/Recommendations">Recommendations</NavLink>
             </div>
             <div className="social">
-                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/tristangraywrites">
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/tgraywrites">
                     <img src={Facebook} alt="Facebook" />
                 </a>
                 <a target="_blank" rel="noreferrer" href="https://twitter.com/TGrayWrites">
