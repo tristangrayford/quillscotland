@@ -30,6 +30,16 @@ const control = require("../../images/Control.jpg")
 const shadowofwar = require("../../images/Shadow of War.jpg")
 const gideon = require("../../images/Gideon.jpg")
 const priory = require("../../images/Priory.jpg")
+const celeste = require("../../images/Celeste.png")
+const hades = require("../../images/Hades.jpeg")
+const hallOfSmoke = require("../../images/Hall of Smoke.jpg")
+
+
+const alanlee = require("../../images/Alan Lee.png")
+const almg = require("../../images/ALMG.png")
+const anato = require("../../images/Anato Finnstark.png")
+const syd = require("../../images/Syd Mills.png")
+const bastien = require("../../images/Bastien.png")
 
 function RecommendationsPage() {
   const books = [
@@ -42,6 +52,7 @@ function RecommendationsPage() {
     <div key="bonewitch"><img src={bonewitch} alt="The Bone Witch" /></div>,
     <div key="priory"><img src={priory} alt="The Priory of the Orange Tree" /></div>,
     <div key="daughter"><img src={daughter} alt="Daughter of the Empire" /></div>,
+    <div key="hall"><img src={hallOfSmoke} alt="Hall of Smoke" /></div>,
   ]
 
   const graphicNovels = [
@@ -66,6 +77,16 @@ function RecommendationsPage() {
     <div key="jedi"><img src={jedi} alt="Jedi: Fallen Order" /></div>,
     <div key="control"><img src={control} alt="Control" /></div>,
     <div key="shadowofwar"><img src={shadowofwar} alt="Middle Earth: Shadow of War" /></div>,
+    <div key="celeste"><img src={celeste} alt="Celeste" /></div>,
+    <div key="hades"><img src={hades} alt="Hades" /></div>,
+  ]
+
+  const artists = [
+    <div key="anato"><img src={anato} alt="Anato Finnstark" /></div>,
+    <div key="syd"><img src={syd} alt="Syd Mills"/></div>,
+    <div key="almg"><img id="almg" src={almg} alt="Anna Le Moine Gray" /></div>,
+    <div key="alanLee"><img src={alanlee} alt="Alan Lee" /></div>,
+    <div key="bastien"><img src={bastien} alt="Bastien LeCouffe DeHarme" /></div>,
   ]
     
     return (<div className="App">
@@ -78,6 +99,8 @@ function RecommendationsPage() {
         <Swiper children={graphicNovels} />
         <h2>Video Games</h2>
         <Swiper children={games}/>
+        <h2>Artists</h2>
+        <Swiper children={artists}/>
     </div></div>)
 }
 

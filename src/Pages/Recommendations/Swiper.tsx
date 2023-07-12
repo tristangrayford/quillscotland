@@ -20,7 +20,7 @@ class Swiper extends React.Component<SwiperProps, SwiperState> {
         this.shift = this.shift.bind(this);
     }
 
-    numberArray = ["first", "second", "third", "forth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"];
+    numberArray = ["first", "second", "third", "forth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelth"];
     
     public render(): JSX.Element {
         return (<div className="swiper">
