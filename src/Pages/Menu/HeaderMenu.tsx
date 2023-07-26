@@ -5,6 +5,7 @@ const Twitter = require("../../images/Twitter.png")
 const Goodreads = require("../../images/Goodreads.png")
 const Tiktok = require("../../images/Tiktok.png")
 const Mastodon = require("../../images/mastodon.png")
+const Bluesky = require("../../images/Bluesky.png")
 
 const logo = require("../../images/TG Transparent Background.png")
 
@@ -32,6 +33,9 @@ class HeaderMenu extends React.Component<{}, {}> {
                 </a>
                 <a target="_blank" rel="me noreferrer" href="https://mastodon.scot/@tree">
                     <img src={Mastodon} alt="Mastodon" />
+                </a>
+                <a target="_blank" rel="noreferrer" href="https://bsky.app/profile/eidyngray.scot">
+                    <img src={Bluesky} alt="Bluesky" />
                 </a>
                 <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@tgraywrites">
                     <img src={Tiktok} alt="Tiktok" />
