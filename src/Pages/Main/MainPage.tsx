@@ -20,7 +20,7 @@ const giftDesc = <p>Continuing her travels along the coast of Seann Àite, Fiadh
 
 const four = <p>A butcher haunts the crags over Kempe Fell. A being from another time and another place, hunting for a spirit that is no longer here.<br /><br />Fiadh and Annis must brave the dealings and secrets of a house long lost to time, and somehow find a way to placate the monster that awaits their return. All the while Fiadh continues to search for those who cast her from the cliffs of Tur Eumor.<br /><br />Both lie deep within the halls of Kempe Fell.</p>
 
-const five = <p>Eyes of Gold. COMING OCTOBER 31st 2023! The tale of Caerdrich will be told by a diminuative storyteller, as Fiadh and Annis seek the only way to find the Red Raven - A wish.</p>
+const five = <p>COMING OCTOBER 31st 2023! <br /><br /> The tale of Caerdrich will be told by a diminuative storyteller, as Fiadh and Annis seek the only way to find the Red Raven - A wish.</p>
 
 const six = <p>The Sixth and final tale. Fiadh finally travels to confront the one who burned her home long ago. Here, at last, she and Caerdrich will have their vengeance.</p>
 
