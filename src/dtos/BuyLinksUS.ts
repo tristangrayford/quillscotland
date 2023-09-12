@@ -31,6 +31,12 @@ const BuyLinksUS: LinkDictionary = {
     ],
     "Eyes": [
         {"title": "Amazon US", "link": "https://www.amazon.com/Eyes-Gold-Tales-Seann-%C3%80ite-ebook/dp/B0CFHW6RWG"},
+        {"title": "Barnes and Noble", "link": "https://www.barnesandnoble.com/w/books/1143920185;jsessionid=B160B6D41418314CAE61DEA59C3F7F7F.prodny_store01-atgap18?ean=2940167215917"},
+        {"title": "Kobo US", "link": "https://www.kobo.com/us/en/ebook/eyes-of-gold"},
+        {"title": "Smashwords", "link": "https://www.smashwords.com/books/view/1436377"},
+        {"title": "Apple Books US", "link": "https://books.apple.com/us/book/id6461120780"},
+        {"title": "Thalia", "link": "https://www.thalia.de/shop/home/artikeldetails/A1069357979"},
+        {"title": "Vivlio", "link": "https://shop.vivlio.com/product/9798223524649_9798223524649_10020/eyes-of-gold"},
     ]
 }
 
