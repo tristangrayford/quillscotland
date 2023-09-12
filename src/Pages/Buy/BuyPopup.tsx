@@ -1,6 +1,7 @@
 import React from "react";
 import { Book } from "../../dtos/enums";
 import BuyLinksUK from "../../dtos/BuyLinksUK";
+import BuyLinksUS from "../../dtos/BuyLinksUS";
 const uk = require("../../images/logos/UK Flag.png")
 const usa = require("../../images/logos/USA Flag.png")
 const amazon = require("../../images/logos/Amazon logo.png")
@@ -119,64 +120,64 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                     case Retailer.Kobo:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.kobo.com/gb/en/ebook/whispers-to-a-crow", '_blank');
+                                window.open(BuyLinksUK["Whispers"][1].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://www.kobo.com/gb/en/ebook/names-of-the-dead-2", '_blank');
+                                window.open(BuyLinksUK["Names"][1].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://www.kobo.com/gb/en/ebook/a-gift-of-the-sea", '_blank');
+                                window.open(BuyLinksUK["Gift"][1].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://www.kobo.com/gb/en/ebook/the-woven-thread-3", '_blank');
-                            break;
+                                window.open(BuyLinksUK["Thread"][1].link, '_blank');
+                                break;
                         }
                         break;
                         case Retailer.AppleBooks:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://tools.applemediaservices.com/book/1563887707?country=gb&ref=1445749546", '_blank');
+                                window.open(BuyLinksUK["Whispers"][2].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://tools.applemediaservices.com/book/1561464673?country=gb&ref=1445749546", '_blank');
+                                window.open(BuyLinksUK["Names"][2].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://tools.applemediaservices.com/book/1573996625?country=gb&ref=1445749546", '_blank');
+                                window.open(BuyLinksUK["Gift"][2].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://tools.applemediaservices.com/book/1617725306?country=gb&ref=1445749546", '_blank');
-                            break;
+                                window.open(BuyLinksUK["Thread"][2].link, '_blank');
+                                break;
                         }
                         break;
                         case Retailer.Waterstones:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.waterstones.com/book/whispers-to-a-crow/tristan-gray/9781838485405", '_blank');
+                                window.open(BuyLinksUK["Whispers"][3].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://www.waterstones.com/book/names-of-the-dead/tristan-gray/9781838485436", '_blank');
+                                window.open(BuyLinksUK["Names"][3].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://www.waterstones.com/book/a-gift-of-the-sea/tristan-gray/9781838485443", '_blank');
+                                window.open(BuyLinksUK["Gift"][3].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://www.waterstones.com/book/the-woven-thread/tristan-gray/9781838485467", '_blank');
+                                window.open(BuyLinksUK["Thread"][3].link, '_blank');
                                 break;
                         }
                         break;
                         case Retailer.eBooks:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.ebooks.com/en-gb/book/210272720/whispers-to-a-crow/tristan-gray/", '_blank');
+                                window.open(BuyLinksUK["Whispers"][4].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://www.ebooks.com/en-gb/book/210263244/names-of-the-dead/tristan-gray/", '_blank');
+                                window.open(BuyLinksUK["Names"][4].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://www.ebooks.com/en-gb/book/210324351/a-gift-of-the-sea/tristan-gray/", '_blank');
+                                window.open(BuyLinksUK["Gift"][4].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://www.ebooks.com/en-gb/book/210533335/the-woven-thread/tristan-gray/", '_blank');
+                                window.open(BuyLinksUK["Thread"][4].link, '_blank');
                                 break;
                         }
                         break;
@@ -187,83 +188,83 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                     case Retailer.Amazon:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.amazon.com/Whispers-Crow-Tales-Seann-%C3%80ite-ebook/dp/B08FZX3682", '_blank');
+                                window.open(BuyLinksUS["Whispers"][0].link, '_blank');
                                 break;
                             case Book.Names:
-                                    window.open("https://www.amazon.com/Names-Dead-Tales-Seann-%C3%80ite-ebook/dp/B08M49C3YN", '_blank');
-                                    break;
+                                window.open(BuyLinksUS["Names"][0].link, '_blank');
+                                break;
                             case Book.Gift:
-                                    window.open("https://www.amazon.com/Gift-Tales-Seann-%C3%80ite-Book-ebook/dp/B097NRDFT8", '_blank');
-                                    break;
+                                window.open(BuyLinksUS["Gift"][0].link, '_blank');
+                                break;
                             case Book.Thread:
-                                    window.open("https://www.amazon.com/Woven-Thread-Tales-Seann-%C3%80ite-ebook/dp/B09WB2R4PH", '_blank');
+                                window.open(BuyLinksUS["Thread"][0].link, '_blank');
                                 break;
                             case Book.Eyes:
-                                window.open("https://www.amazon.co.uk/dp/B09WB2R4PH", '_blank');
-                                    break;
+                                window.open(BuyLinksUS["Eyes"][0].link, '_blank');
+                                break;
                         }
                         break;
                         case Retailer.BarnesAndNoble:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.barnesandnoble.com/w/whispers-to-a-crow-tristan-gray/1137511207", '_blank');
+                                window.open(BuyLinksUS["Whispers"][1].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://www.barnesandnoble.com/w/names-of-the-dead-tristan-gray/1138005227", '_blank');
+                                window.open(BuyLinksUS["Names"][1].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://www.barnesandnoble.com/w/a-gift-of-the-sea-tristan-gray/1139740469", '_blank');
+                                window.open(BuyLinksUS["Gift"][1].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://www.barnesandnoble.com/w/the-woven-thread-tristan-gray/1141287390?ean=9781838485467", '_blank');
+                                window.open(BuyLinksUS["Thread"][1].link, '_blank');
                                 break;
                         }
                         break;
                     case Retailer.Kobo:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.kobo.com/us/en/ebook/whispers-to-a-crow", '_blank');
+                                window.open(BuyLinksUS["Whispers"][2].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://www.kobo.com/us/en/ebook/names-of-the-dead-2", '_blank');
+                                window.open(BuyLinksUS["Names"][2].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://www.kobo.com/us/en/ebook/a-gift-of-the-sea", '_blank');
+                                window.open(BuyLinksUS["Gift"][2].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://www.kobo.com/us/en/ebook/the-woven-thread-3", '_blank');
+                                window.open(BuyLinksUS["Thread"][2].link, '_blank');
                                 break;
                         }
                         break;
                         case Retailer.AppleBooks:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://tools.applemediaservices.com/book/1563887707?country=us&ref=1445749546", '_blank');
+                                window.open(BuyLinksUS["Whispers"][3].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://tools.applemediaservices.com/book/1561464673?country=us&ref=1445749546", '_blank');
+                                window.open(BuyLinksUS["Names"][3].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://tools.applemediaservices.com/book/1573996625?country=us&ref=1445749546", '_blank');
+                                window.open(BuyLinksUS["Gift"][3].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://tools.applemediaservices.com/book/1617725306?country=us&ref=1445749546", '_blank');
+                                window.open(BuyLinksUS["Thread"][3].link, '_blank');
                                 break;
                         }
                         break;
                         case Retailer.eBooks:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.ebooks.com/en-us/book/210272720/whispers-to-a-crow/tristan-gray/", '_blank');
+                                window.open(BuyLinksUS["Whispers"][4].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://www.ebooks.com/en-us/book/210263244/names-of-the-dead/tristan-gray/", '_blank');
+                                window.open(BuyLinksUS["Names"][4].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://www.ebooks.com/en-us/book/210324351/a-gift-of-the-sea/tristan-gray/", '_blank');
+                                window.open(BuyLinksUS["Gift"][4].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://www.ebooks.com/en-us/book/210533335/the-woven-thread/tristan-gray/", '_blank');
+                                window.open(BuyLinksUS["Thread"][4].link, '_blank');
                                 break;
                             }
                         }
