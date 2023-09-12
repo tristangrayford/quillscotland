@@ -3,12 +3,21 @@
     width: calc(100% - 40px);
     margin: 20px;
     display: grid;
-    grid-template-columns: 60px auto 600px;
-    grid-template-rows: 20px 25px;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 75px 25px;
+
+    .menu {
+        display: none;
+    }
+
+    h1 {
+        grid-column: 2;
+    }
 
     .menu-items{
-        grid-column: 3;
-        text-align: right;
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
 
         a {
             font-family: $mainfont;
@@ -25,7 +34,6 @@
 
     .social {
         margin-top: 5px;
-        grid-row: 2;
         grid-column: 3;
 
         a {
@@ -58,7 +66,7 @@
 
 @media(max-width: 750px){
     .header-menu {
-        grid-template-columns: 50px auto 580px;
+        grid-template-columns: 150px auto 150px;
 
         .menu-items{
             margin-left: auto;
@@ -75,7 +83,7 @@
 
 @media(max-width: 680px){
     .header-menu {
-        grid-template-columns: 40px auto 460px;
+        grid-template-columns: 140px auto 140px;
 
         .menu-items{
             text-align: center;
@@ -91,21 +99,60 @@
     }
 }
 
-@media(max-width: 550px){
+@media(max-width: 570px){
     .header-menu {
-        grid-template-columns: 40px auto 200px;
-        grid-template-rows: 60px 25px;
-        height: 80px;
+        grid-template-rows: 30px 20px;
+        grid-template-columns: 50px auto 140px;
+        height: 50px;
 
-        .menu-items{
-            a {
-                font-size: 12px;
-                margin: 0 10px 0 10px;
+        h1 {
+            margin-top: 5px;
+            font-size: 16px;
+            grid-row: 1;
+            width: auto;
+        }
+
+        .menu {
+            display: block;
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
+            right: 10px;
+            position: absolute;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+
+            img {
+                height: 30px;
             }
         }
 
+        .menu-items {
+            display: none;
+            width: 180px;
+            padding: 10px;
+            z-index: 1;
+            position: absolute;
+            right: 10px;
+            text-align: right;
+            top: 60px;
+            background-color: black;
+            border-radius: 10px;
+            
+            a {
+                display: block;
+                font-size: 16px;
+                margin: 0 10px 5px 10px;
+            }
+        }
+
+        .show-menu {
+            display: block;
+        }
+
         .social {
-            width: 200px;
+            grid-row: 2;
+            grid-column: 3;
 
             a {
                 display: inline-block;
@@ -116,7 +163,7 @@
 
         .header-logo {
             width: 40px;
-            margin-top: 15px;
+            margin-top: -5px;
         }
     }
 }

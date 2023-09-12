@@ -1,5 +1,6 @@
 import React from "react";
 import { Book } from "../../dtos/enums";
+import BuyLinksUK from "../../dtos/BuyLinksUK";
 const uk = require("../../images/UK Flag.png")
 const usa = require("../../images/USA Flag.png")
 const amazon = require("../../images/Amazon logo.png")
@@ -99,16 +100,19 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                     case Retailer.Amazon:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.amazon.co.uk/gp/product/B08FZX3682", '_blank');
+                                window.open(BuyLinksUK["Whispers"][0].link, '_blank');
                                 break;
                             case Book.Names:
-                                window.open("https://www.amazon.co.uk/gp/product/B08M49C3YN", '_blank');
+                                window.open(BuyLinksUK["Names"][0].link, '_blank');
                                 break;
                             case Book.Gift:
-                                window.open("https://www.amazon.co.uk/gp/product/B097NRDFT8", '_blank');
+                                window.open(BuyLinksUK["Gift"][0].link, '_blank');
                                 break;
                             case Book.Thread:
-                                window.open("https://www.amazon.co.uk/dp/B09WB2R4PH", '_blank');
+                                window.open(BuyLinksUK["Thread"][0].link, '_blank');
+                                break;
+                            case Book.Eyes:
+                                window.open(BuyLinksUK["Eyes"][0].link, '_blank');
                                 break;
                         }
                         break;
@@ -123,9 +127,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Gift:
                                 window.open("https://www.kobo.com/gb/en/ebook/a-gift-of-the-sea", '_blank');
                                 break;
-                                case Book.Thread:
+                            case Book.Thread:
                                 window.open("https://www.kobo.com/gb/en/ebook/the-woven-thread-3", '_blank');
-                                break;
+                            break;
                         }
                         break;
                         case Retailer.AppleBooks:
@@ -139,9 +143,9 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Gift:
                                 window.open("https://tools.applemediaservices.com/book/1573996625?country=gb&ref=1445749546", '_blank');
                                 break;
-                                case Book.Thread:
+                            case Book.Thread:
                                 window.open("https://tools.applemediaservices.com/book/1617725306?country=gb&ref=1445749546", '_blank');
-                                break;
+                            break;
                         }
                         break;
                         case Retailer.Waterstones:
@@ -171,10 +175,11 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                             case Book.Gift:
                                 window.open("https://www.ebooks.com/en-gb/book/210324351/a-gift-of-the-sea/tristan-gray/", '_blank');
                                 break;
-                                case Book.Thread:
+                            case Book.Thread:
                                 window.open("https://www.ebooks.com/en-gb/book/210533335/the-woven-thread/tristan-gray/", '_blank');
                                 break;
-                            }
+                        }
+                        break;
                 }
                 break;
             case Region.USA:
@@ -182,17 +187,20 @@ class BuyPopup extends React.Component<BuyPopupProps, BuyPopupState> {
                     case Retailer.Amazon:
                         switch (this.state.bookSelected) {
                             case Book.Whispers:
-                                window.open("https://www.amazon.co.uk/gp/product/B08FZX3682", '_blank');
+                                window.open("https://www.amazon.com/Whispers-Crow-Tales-Seann-%C3%80ite-ebook/dp/B08FZX3682", '_blank');
                                 break;
-                        case Book.Names:
-                                window.open("https://www.amazon.co.uk/gp/product/B08M49C3YN", '_blank');
+                            case Book.Names:
+                                    window.open("https://www.amazon.com/Names-Dead-Tales-Seann-%C3%80ite-ebook/dp/B08M49C3YN", '_blank');
+                                    break;
+                            case Book.Gift:
+                                    window.open("https://www.amazon.com/Gift-Tales-Seann-%C3%80ite-Book-ebook/dp/B097NRDFT8", '_blank');
+                                    break;
+                            case Book.Thread:
+                                    window.open("https://www.amazon.com/Woven-Thread-Tales-Seann-%C3%80ite-ebook/dp/B09WB2R4PH", '_blank');
                                 break;
-                        case Book.Gift:
-                                window.open("https://www.amazon.co.uk/gp/product/B097NRDFT8", '_blank');
-                                break;
-                        case Book.Thread:
-                                window.open("https://www.amazon.com/dp/B09WB2R4PH", '_blank');
-                                break;
+                            case Book.Eyes:
+                                window.open("https://www.amazon.co.uk/dp/B09WB2R4PH", '_blank');
+                                    break;
                         }
                         break;
                         case Retailer.BarnesAndNoble:

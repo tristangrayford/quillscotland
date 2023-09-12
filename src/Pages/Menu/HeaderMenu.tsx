@@ -6,18 +6,35 @@ const Goodreads = require("../../images/Goodreads.png")
 const Tiktok = require("../../images/Tiktok.png")
 const Mastodon = require("../../images/mastodon.png")
 const Bluesky = require("../../images/Bluesky.png")
+const menu = require("../../images/Menu.webp")
 
 const logo = require("../../images/TG Transparent Background.png")
 
-class HeaderMenu extends React.Component<{}, {}> {
+interface MenuState {
+    menuShown: boolean;
+}
+
+class HeaderMenu extends React.Component<{}, MenuState> {
     public constructor(props: {}) {
         super(props);
+        this.state = {menuShown: false};
+    }
+
+    showMenu(): void {
+        this.setState({
+            menuShown: !this.state.menuShown
+        })
     }
 
     public render(): JSX.Element {
-        return (<div className="header-menu">
+        return (
+        <div className="header-menu">
             <NavLink to="/"><img className="header-logo" alt="logo" src={logo} /></NavLink>
-            <div className="menu-items">
+            <h1>Tristan Gray</h1>
+            <button onClick={() => this.showMenu()} className="menu">
+                <img alt="menu" src={menu}/>
+            </button>
+            <div className={this.state.menuShown ? "menu-items show-menu" : "menu-items"}>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/About">About</NavLink>
                 <NavLink to="/Writing">Other Writing</NavLink>
