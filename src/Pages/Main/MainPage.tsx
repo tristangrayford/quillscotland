@@ -6,12 +6,13 @@ import HeaderMenu from "../Menu/HeaderMenu";
 import BookItem from "./BookItem";
 import BuyLinksUK from "../../dtos/BuyLinksUK";
 import BuyLinksUS from "../../dtos/BuyLinksUS";
-const whispers = require("../../images/book-covers/large/Portrait Whispers.png")
-const names = require("../../images/book-covers/large/Names of the Dead.png")
-const gift = require("../../images/book-covers/large/A Gift of the Sea.png")
-const thread = require("../../images/book-covers/large/The Woven Thread.png")
+const whispers = require("../../images/book-covers/small/Whispers.png")
+const names = require("../../images/book-covers/small/Names.png")
+const gift = require("../../images/book-covers/small/Gift.png")
+const thread = require("../../images/book-covers/small/Thread.png")
+const eyes = require("../../images/book-covers/small/Eyes.png")
+const question = require("../../images/book-covers/small/Question.png")
 const trees = require("../../images/Trees.png")
-const question = require("../../images/book-covers/large/Question.png")
 const map = require("../../images/Seann Aite.png")
 
 const whispersDesc = <p>Paid to unearth the fate of the children of the Three Willows, Fiadh expects the work of a predatory fey.<br /><br /> But this was a very different kind of monster who preyed upon the village folk. One that would leave her no choice but to journey into the wilderness beyond.<br /><br /> Experience an adventure in the world of Seann Àite, inspired by the myths and folklore of dark age Scotland.<br /><br /> The dialogue features sections written in the Scots language which is used throughout the series.</p>
@@ -62,7 +63,7 @@ function MainPage() {
                 <BookItem bookItemContent={namesDesc} bookItemTitle="Names of the Dead" bookItemImage={names} book={Book.Names} bookItemLinksUK={BuyLinksUK["Names"]} bookItemLinksUS={BuyLinksUS["Names"]} />
                 <BookItem bookItemContent={giftDesc} bookItemTitle="A Gift of the Sea" bookItemImage={gift} book={Book.Gift} bookItemLinksUK={BuyLinksUK["Gift"]} bookItemLinksUS={BuyLinksUS["Gift"]} />
                 <BookItem bookItemContent={four} bookItemTitle="The Woven Thread" bookItemImage={thread} book={Book.Thread}  bookItemLinksUK={BuyLinksUK["Thread"]} bookItemLinksUS={BuyLinksUS["Thread"]}/>
-                <BookItem bookItemContent={five} bookItemTitle="Eyes of Gold" bookItemImage={question} book={Book.None}  bookItemLinksUK={BuyLinksUK["Eyes"]} bookItemLinksUS={BuyLinksUS["Eyes"]}/>
+                <BookItem bookItemContent={five} bookItemTitle="Eyes of Gold" bookItemImage={eyes} book={Book.None}  bookItemLinksUK={BuyLinksUK["Eyes"]} bookItemLinksUS={BuyLinksUS["Eyes"]}/>
                 <BookItem bookItemContent={six} bookItemTitle="Tale No. 6" bookItemImage={question} book={Book.None} bookItemLinksUK={[{"title": "", "link": ""}]} bookItemLinksUS={[{"title": "", "link": ""}]}/>
             </div>
             <h2>Map of Seann Àite</h2>
