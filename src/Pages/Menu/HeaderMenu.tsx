@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
-const Facebook = require("../../images/Facebook.png")
-const Twitter = require("../../images/Twitter.png")
-const Goodreads = require("../../images/Goodreads.png")
-const Tiktok = require("../../images/Tiktok.png")
-const Mastodon = require("../../images/mastodon.png")
-const Bluesky = require("../../images/Bluesky.png")
+const Facebook = require("../../images/logos/Facebook.png")
+const Twitter = require("../../images/logos/Twitter.png")
+const Goodreads = require("../../images/logos/Goodreads.png")
+const Tiktok = require("../../images/logos/Tiktok.png")
+const Mastodon = require("../../images/logos/mastodon.png")
+const Bluesky = require("../../images/logos/Bluesky.png")
 const menu = require("../../images/Menu.webp")
 
 const logo = require("../../images/TG Transparent Background.png")

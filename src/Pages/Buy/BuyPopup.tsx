@@ -1,14 +1,14 @@
 import React from "react";
 import { Book } from "../../dtos/enums";
 import BuyLinksUK from "../../dtos/BuyLinksUK";
-const uk = require("../../images/UK Flag.png")
-const usa = require("../../images/USA Flag.png")
-const amazon = require("../../images/Amazon logo.png")
-const bandn = require("../../images/BandN.png")
-const kobo = require("../../images/Kobo-logo.png")
-const apple = require("../../images/Apple Books Logo.png")
-const ebooks = require("../../images/eBooks.png")
-const waterstones = require("../../images/Waterstones.png")
+const uk = require("../../images/logos/UK Flag.png")
+const usa = require("../../images/logos/USA Flag.png")
+const amazon = require("../../images/logos/Amazon logo.png")
+const bandn = require("../../images/logos/BandN.png")
+const kobo = require("../../images/logos/Kobo-logo.png")
+const apple = require("../../images/logos/Apple Books Logo.png")
+const ebooks = require("../../images/logos/eBooks.png")
+const waterstones = require("../../images/logos/Waterstones.png")
 
 interface BuyPopupProps {
     onClose: Function;

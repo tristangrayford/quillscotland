@@ -6,12 +6,12 @@ import HeaderMenu from "../Menu/HeaderMenu";
 import BookItem from "./BookItem";
 import BuyLinksUK from "../../dtos/BuyLinksUK";
 import BuyLinksUS from "../../dtos/BuyLinksUS";
-const whispers = require("../../images/Portrait Whispers.png")
-const names = require("../../images/Names of the Dead.png")
-const gift = require("../../images/A Gift of the Sea.png")
-const thread = require("../../images/The Woven Thread.png")
+const whispers = require("../../images/book-covers/large/Portrait Whispers.png")
+const names = require("../../images/book-covers/large/Names of the Dead.png")
+const gift = require("../../images/book-covers/large/A Gift of the Sea.png")
+const thread = require("../../images/book-covers/large/The Woven Thread.png")
 const trees = require("../../images/Trees.png")
-const question = require("../../images/Question.png")
+const question = require("../../images/book-covers/large/Question.png")
 const map = require("../../images/Seann Aite.png")
 
 const whispersDesc = <p>Paid to unearth the fate of the children of the Three Willows, Fiadh expects the work of a predatory fey.<br /><br /> But this was a very different kind of monster who preyed upon the village folk. One that would leave her no choice but to journey into the wilderness beyond.<br /><br /> Experience an adventure in the world of Seann Àite, inspired by the myths and folklore of dark age Scotland.<br /><br /> The dialogue features sections written in the Scots language which is used throughout the series.</p>
