@@ -14,6 +14,7 @@ const eyes = require("../../images/book-covers/small/Eyes.png")
 const question = require("../../images/book-covers/small/Question.png")
 const trees = require("../../images/Trees.png")
 const map = require("../../images/Seann Aite.png")
+const arrow = require("../../images/Arrow.png")
 
 const whispersDesc = <p>Paid to unearth the fate of the children of the Three Willows, Fiadh expects the work of a predatory fey.<br /><br /> But this was a very different kind of monster who preyed upon the village folk. One that would leave her no choice but to journey into the wilderness beyond.<br /><br /> Experience an adventure in the world of Seann Àite, inspired by the myths and folklore of dark age Scotland.<br /><br /> The dialogue features sections written in the Scots language which is used throughout the series.</p>
 
@@ -57,6 +58,11 @@ function MainPage() {
             <div className="series-title">
                 <img src={ trees } alt="Tales of Seann Àite"/>
                 <h2>- Tales of Seann Àite -</h2>
+            </div>
+            <div className="buy-direct">
+                <img className="arrow arrow-one" src={ arrow } alt="Arrow"/>
+                <a href="https://ko-fi.com/tristangray/shop">Click to Buy The Tales From Me Directly</a>
+                <img className="arrow arrow-two" src={ arrow } alt="Arrow"/>
             </div>
             <div className="books">
                 <BookItem bookItemContent={whispersDesc} bookItemTitle="Whispers To A Crow" bookItemImage={whispers} book={Book.Whispers} bookItemLinksUK={BuyLinksUK["Whispers"]} bookItemLinksUS={BuyLinksUS["Whispers"]}/>

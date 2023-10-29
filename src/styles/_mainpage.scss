@@ -18,6 +18,32 @@
         }
     }
 
+    .buy-direct {
+        background-color: #222266;
+        padding: 20px;
+        
+        a {
+            font-family: $mainfont;
+            color: white;
+            text-decoration: none;
+        }
+
+        .arrow {
+            height: 15px;
+            filter: invert(100%)
+        }
+
+        .arrow-one {
+            margin-right: 15px;
+            transform: rotate(90deg);
+        }
+
+        .arrow-two {
+            margin-left: 15px;
+            transform: rotate(-90deg);
+        }
+    }
+
     .books {
         padding-right: 150px;
 
