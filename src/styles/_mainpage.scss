@@ -178,3 +178,47 @@
         }
     }
 }
+
+@media(max-width: 480px){
+    .main-page {
+        .buy-direct {
+            padding: 10px;
+
+            a {
+                display: inline-block;
+                width: calc(100vw - 120px);
+            }
+
+            .arrow {
+                padding-bottom: 18px;
+            }
+        }
+
+        .books {
+            .book-item {
+                display: block;
+                width: 250px;
+                margin-left: calc(50vw - 125px);
+    
+                .book-links{
+                    display: block;
+                    width: 250px;
+                    padding: 0;
+    
+                    .book-link {
+                        margin: 0;
+                        text-align: left;
+                        padding-bottom: 5px;
+    
+                        a {
+                            margin: 0;
+                            padding: 0;
+                            color: lightblue;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
