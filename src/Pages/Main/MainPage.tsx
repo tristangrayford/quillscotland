@@ -6,6 +6,7 @@ import HeaderMenu from "../Menu/HeaderMenu";
 import BookItem from "./BookItem";
 import BuyLinksUK from "../../dtos/BuyLinksUK";
 import BuyLinksUS from "../../dtos/BuyLinksUS";
+import GoodreadsWidget from "./Goodreads";
 const whispers = require("../../images/book-covers/small/Whispers.png")
 const names = require("../../images/book-covers/small/Names.png")
 const gift = require("../../images/book-covers/small/Gift.png")
@@ -53,6 +54,7 @@ function MainPage() {
     
     return (<div className="App">
         <div className={"main-page" + (selected || mapClicked ? " popup-active" : "" )} >
+        <script type="text/javascript" charSet="utf-8" src="https://www.goodreads.com/author/author_widget/20606471.Tristan_Gray?widget_id=1699907161"></script>
             <HeaderMenu />
             <BuyModal onClick={openBuy}/>
             <div className="series-title">
@@ -72,6 +74,8 @@ function MainPage() {
                 <BookItem bookItemContent={five} bookItemTitle="Eyes of Gold" bookItemImage={eyes} book={Book.None}  bookItemLinksUK={BuyLinksUK["Eyes"]} bookItemLinksUS={BuyLinksUS["Eyes"]}/>
                 <BookItem bookItemContent={six} bookItemTitle="Tale No. 6" bookItemImage={question} book={Book.None} bookItemLinksUK={[{"title": "", "link": ""}]} bookItemLinksUS={[{"title": "", "link": ""}]}/>
             </div>
+            <GoodreadsWidget/>
+            
             <h2>Map of Seann Àite</h2>
             <p>Click to see more</p>
             <button className={mapClicked ? "map-selected map-section" : "map-section"}>

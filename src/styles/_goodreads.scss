@@ -1,0 +1,46 @@
+.goodreads{
+    background-color: white;
+    max-width: 100%;
+    padding: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #382110;
+
+    .gr_title {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .gr_container {
+        a {
+            color: #00635d;
+            text-decoration: none;
+        }
+        display: block;
+        font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        img {
+            border: 0;
+        }
+
+    .gr_book_container {
+        padding: 5px;
+        border-bottom: 1px solid #d7d7d7;
+        font-size: 14px;
+        display: inline-block;
+        max-width: 220px;
+        height: 100px;
+        vertical-align: top;
+    
+  
+    .gr_book_image {
+        float: left; 
+        padding-right: 20px;
+    }
+
+    .gr_review_stats {
+        vertical-align: top;
+        text-align: left;
+    }
+    }
+    }
+}
