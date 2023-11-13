@@ -63,6 +63,10 @@
         background-color: #fff;
         max-width:1000px;
         width: calc(100% - 350px);
+
+        .gr_reviews_container{
+            padding: 10px;
+        }
       }
       #goodreads-widget a:hover { text-decoration: underline; }
       #goodreads-widget a:active {
