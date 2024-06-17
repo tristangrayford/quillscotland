@@ -1,6 +1,6 @@
 {
-    "homepage": "https://tristangraywrites.com",
-    "name": "writesite",
+    "homepage": "https://quill.scot",
+    "name": "quillscotland",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

@@ -114,8 +114,6 @@
 
         .menu {
             display: block;
-            -webkit-filter: invert(100%);
-            filter: invert(100%);
             right: 10px;
             position: absolute;
             cursor: pointer;
@@ -184,8 +182,6 @@
         .menu {
             grid-column: 4;
             display: block;
-            -webkit-filter: invert(100%);
-            filter: invert(100%);
             right: 10px;
             position: absolute;
             cursor: pointer;
