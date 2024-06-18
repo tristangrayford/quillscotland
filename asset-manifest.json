@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72d2c4fd.css",
+    "main.js": "/static/js/main.e50ea59d.js",
+    "static/js/787.ba3c9c00.chunk.js": "/static/js/787.ba3c9c00.chunk.js",
+    "static/media/Rainbow Quill.png": "/static/media/Rainbow Quill.9b836b69c0ea222fdffc.png",
+    "static/media/Menu.webp": "/static/media/Menu.ff03fc4a48c5b5810797.webp",
+    "index.html": "/index.html",
+    "main.72d2c4fd.css.map": "/static/css/main.72d2c4fd.css.map",
+    "main.e50ea59d.js.map": "/static/js/main.e50ea59d.js.map",
+    "787.ba3c9c00.chunk.js.map": "/static/js/787.ba3c9c00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72d2c4fd.css",
+    "static/js/main.e50ea59d.js"
+  ]
+}
