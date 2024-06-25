@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderMenu from "../Menu/HeaderMenu";
 const logo = require("../../images/Rainbow Quill.png")
+const Discord = require("../../images/social-media/Discord.png")
 
 function MainPage() {
     return (
@@ -13,8 +14,12 @@ function MainPage() {
                 <h2>Queers in Living Literature</h2>
                 <p>Championing the LGBTQ+ Community in the Scottish Literary Scene</p>
             </div>
+            <p className="contact-us">Join us on Discord</p>
+            <a className="discord" target="_blank" rel="noreferrer" href="https://discord.gg/yBB42q4MQe">
+                <img src={Discord} alt="Discord" />
+            </a>
             <p className="contact-us">info@quill.scot</p>
-            </div>
+        </div>
     </div>)
 }
 
