@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderMenu from "../Menu/HeaderMenu";
+import HeaderMenu from "./HeaderMenu";
 
 function AboutPage() {
   return (
