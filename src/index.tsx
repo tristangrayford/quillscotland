@@ -5,14 +5,14 @@ import reportWebVitals from "./reportWebVitals";
 import "./App.scss";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import AboutPage from "./Pages/AboutPage";
-import ReadingPage from "./Pages/ReadingPage";
+import ResourcesPage from "./Pages/ResourcesPage";
 
 const routing = (
   <HashRouter>
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/About" element={<AboutPage />} />
-      <Route path="/Reading" element={<ReadingPage />} />
+      <Route path="/Resources" element={<ResourcesPage />} />
     </Routes>
   </HashRouter>
 );

@@ -1,13 +1,13 @@
 import React from "react";
 import HeaderMenu from "./HeaderMenu";
 
-function ReadingPage() {
+function ResourcesPage() {
   return (
     <div className="App">
       <div className={"main-page"}>
         <HeaderMenu />
         <div>
-          <h2>Useful Reading Resources</h2>
+          <h2>Useful Resources</h2>
           <h3>Scottish Literary Scene</h3>
           <a
             href={
@@ -61,10 +61,20 @@ function ReadingPage() {
           >
             They do not speak for us | The National
           </a>
+          <h3>LGBT+ Friendly Folk in Literature</h3>
+          <a href={"https://lighthousebookshop.com/"}>Lighthouse Books</a>
+          <br />
+          <a href={"https://www.typewronger.com/"}>Argonaut Books</a>
+          <br />
+          <a href={"https://argonautbooks.co.uk/"}>Typewronger</a>
+          <br />
+          <a href={"https://www.categoryisbooks.com/"}>Category Is Books</a>
+          <br />
+          <a href={"https://www.queerlit.co.uk/"}>QueerLit</a>
         </div>
       </div>
     </div>
   );
 }
 
-export default ReadingPage;
+export default ResourcesPage;
