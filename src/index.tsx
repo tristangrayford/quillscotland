@@ -6,6 +6,9 @@ import "./App.scss";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import AboutPage from "./Pages/AboutPage";
 import ResourcesPage from "./Pages/ResourcesPage";
+import NewsPage from "./Pages/NewsPage";
+import TillySolidarity from "./Pages/News/TillySolidarity";
+import GlasgowPride2024 from "./Pages/News/GlasgowPride2024";
 
 const routing = (
   <HashRouter>
@@ -13,6 +16,9 @@ const routing = (
       <Route path="/" element={<MainPage />} />
       <Route path="/About" element={<AboutPage />} />
       <Route path="/Resources" element={<ResourcesPage />} />
+      <Route path="/News" element={<NewsPage />} />
+      <Route path="/News/TillySolidarity" element={<TillySolidarity />} />
+      <Route path="/News/GlasgowPride2024" element={<GlasgowPride2024 />} />
     </Routes>
   </HashRouter>
 );
