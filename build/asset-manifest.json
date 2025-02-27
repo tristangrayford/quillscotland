@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.9bcf74e4.css",
-    "main.js": "/static/js/main.971868fb.js",
+    "main.css": "/static/css/main.86f22279.css",
+    "main.js": "/static/js/main.6838c5ca.js",
     "static/js/787.ba3c9c00.chunk.js": "/static/js/787.ba3c9c00.chunk.js",
     "static/media/Rainbow Quill.png": "/static/media/Rainbow Quill.9b836b69c0ea222fdffc.png",
+    "static/media/TDOV2025.png": "/static/media/TDOV2025.a1a1893f2c76b9a56fe8.png",
     "static/media/Instagram.png": "/static/media/Instagram.92fa8e0eb876072e9366.png",
     "static/media/Discord.png": "/static/media/Discord.ecf7215bc493f56f7210.png",
     "static/media/Bluesky.png": "/static/media/Bluesky.3cf35903ba67fb8fd095.png",
     "static/media/Email.png": "/static/media/Email.b9e0fbf93106b7fa9e1b.png",
     "static/media/Menu.webp": "/static/media/Menu.ff03fc4a48c5b5810797.webp",
     "index.html": "/index.html",
-    "main.9bcf74e4.css.map": "/static/css/main.9bcf74e4.css.map",
-    "main.971868fb.js.map": "/static/js/main.971868fb.js.map",
+    "main.86f22279.css.map": "/static/css/main.86f22279.css.map",
+    "main.6838c5ca.js.map": "/static/js/main.6838c5ca.js.map",
     "787.ba3c9c00.chunk.js.map": "/static/js/787.ba3c9c00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bcf74e4.css",
-    "static/js/main.971868fb.js"
+    "static/css/main.86f22279.css",
+    "static/js/main.6838c5ca.js"
   ]
 }

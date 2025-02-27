@@ -11,6 +11,12 @@ function NewsPage() {
           <h2>News</h2>
           <div className="news-container">
             <div className="news-block">
+              <NavLink to="/News/TDOV2025">
+                Trans Day of Visibility Readings 2025
+              </NavLink>
+              <p>26th February 2025</p>
+            </div>
+            <div className="news-block">
               <NavLink to="/News/GlasgowPride2024">
                 Statement on Glasgow Pride 2024
               </NavLink>
