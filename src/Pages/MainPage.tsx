@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderMenu from "./HeaderMenu";
-const logo = require("../images/Rainbow Quill.png");
-const Discord = require("../images/social-media/Discord.png");
+import logo from "../images/Rainbow Quill.png";
+import Discord from "../images/social-media/Discord.png";
 
 function MainPage() {
   return (

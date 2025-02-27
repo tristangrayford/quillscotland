@@ -1,6 +1,6 @@
 import React from "react";
 import NewsContainer from "./NewsContainer";
-const TDOV2025Image = require("../../images/TDOV2025.png");
+import TDOV2025Image from "../../images/TDOV2025.png";
 
 function TDOV2025Event() {
   const news = (

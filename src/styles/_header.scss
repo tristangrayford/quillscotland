@@ -1,4 +1,6 @@
 
+@use "params";
+
 .header-menu {
     width: calc(100% - 40px);
     margin: 20px;
@@ -20,8 +22,8 @@
         text-align: center;
 
         a {
-            font-family: $mainfont;
-            color: $mainfontcolor;
+            font-family: params.$mainfont;
+            color: params.$mainfontcolor;
             display: inline-block;
             margin-left: 10px;
             margin-right: 10px;

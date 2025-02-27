@@ -1,12 +1,12 @@
-import React from "react";
+import React, { JSX } from "react";
 import { NavLink } from "react-router-dom";
-const menu = require("../images/Menu.webp");
-const logo = require("../images/Rainbow Quill.png");
-const Facebook = require("../images/social-media/Facebook.png");
-const Instagram = require("../images/social-media/Instagram.png");
-const Twitter = require("../images/social-media/Twitter.png");
-const Bluesky = require("../images/social-media/Bluesky.png");
-const Email = require("../images/social-media/Email.png");
+import menu from "../images/Menu.webp";
+import logo from "../images/Rainbow Quill.png";
+import Facebook from "../images/social-media/Facebook.png";
+import Instagram from "../images/social-media/Instagram.png";
+import Twitter from "../images/social-media/Twitter.png";
+import Bluesky from "../images/social-media/Bluesky.png";
+import Email from "../images/social-media/Email.png";
 
 interface MenuState {
   menuShown: boolean;

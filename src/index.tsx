@@ -1,4 +1,3 @@
-import React from "react";
 import MainPage from "./Pages/MainPage";
 import reportWebVitals from "./reportWebVitals";
 import "./App.scss";

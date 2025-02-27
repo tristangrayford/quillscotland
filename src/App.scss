@@ -1,10 +1,11 @@
+@use "sass:meta";
 @import url('https://fonts.googleapis.com/css?family=Metamorphous');
 
-@import "./styles/params";
+@include meta.load-css("./styles/params");
 
-@import "./styles/general";
+@include meta.load-css("./styles/general");
 
-@import "./styles/mainpage";
-@import "./styles/aboutpage";
-@import "./styles/newspage";
-@import "./styles/header";
+@include meta.load-css("./styles/mainpage");
+@include meta.load-css("./styles/aboutpage");
+@include meta.load-css("./styles/newspage");
+@include meta.load-css("./styles/header");
