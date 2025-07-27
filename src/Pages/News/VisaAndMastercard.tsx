@@ -9,14 +9,17 @@ export function VisaAndMastercard() {
         alt="Visa and Mastercard Logos as Eye of Sauron looking at 18+"
       />
       <p>
-        This week Visa and Mastercard used their complete control over the
-        payment processing of creative platforms Steam and itch.io to force both
-        websites to eradicate everything they consider to be "problematic"
-        content online. This included all work labelled "NSFW" (not safe for
-        work) which in turn included the works, 18+ rated or not, of tens of
-        thousands of queer creators on those platforms. These creators were
-        given no warning and immediately faced their works, and often their
-        livlihoods, being abruptly shut down.
+        This week{" "}
+        <a href="https://www.ibtimes.co.uk/mastercard-visa-under-fire-petition-payment-giants-not-police-legal-content-blows-1739406">
+          Visa and Mastercard used their complete control over the payment
+          processing of creative platforms Steam and itch.io
+        </a>{" "}
+        to force both websites to eradicate everything they consider to be
+        "problematic" content online. This included all work labelled "NSFW"
+        (not safe for work) which in turn included the works, 18+ rated or not,
+        of tens of thousands of queer creators on those platforms. These
+        creators were given no warning and immediately faced their works, and
+        often their livlihoods, being abruptly shut down.
       </p>
       <p>
         This mass book-burning of queer content online was performed on behalf
