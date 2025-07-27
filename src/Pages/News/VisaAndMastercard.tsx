@@ -56,7 +56,7 @@ export function VisaAndMastercard() {
       <p>
         You can sign the petition here, but make sure this is not all you do.
         Phone calls have 1000x more impact than a petition signature.
-        <a href="chng.it/s5vvfnfN6z">
+        <a href="https://www.change.org/p/tell-mastercard-visa-activist-groups-stop-controlling-what-we-can-watch-read-or-play?recruited_by_id=18018b80-6ad8-11f0-84e4-55dcfa667bc5&utm_source=share_petition&utm_campaign=psf_combo_share_initial&utm_term=psf&utm_medium=copylink">
           Tell MasterCard, Visa & Activist Groups: Stop Controlling What We Can
           Watch, Read, or Play.
         </a>
