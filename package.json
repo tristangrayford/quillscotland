@@ -74,7 +74,7 @@
     },
     "scripts": {
         "predeploy": "npm run build && COPY \"CNAME\" \"./build/CNAME\"",
-        "deploy": "gh-pages -b master -d build",
+        "deploy": "gh-pages -d docs",
         "start": "vite",
         "build": "tsc && vite build",
         "serve": "vite preview"

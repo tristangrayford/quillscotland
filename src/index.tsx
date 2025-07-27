@@ -9,6 +9,8 @@ import TillySolidarity from "./Pages/News/TillySolidarity";
 import GlasgowPride2024 from "./Pages/News/GlasgowPride2024";
 import TDOV2025Event from "./Pages/News/TDOV2025Event";
 import { createRoot } from "react-dom/client";
+import { VisaAndMastercard } from "./Pages/News/VisaAndMastercard";
+import { AltFringe2025 } from "./Pages/News/AltFringe2025";
 
 const routing = (
   <HashRouter>
@@ -20,6 +22,8 @@ const routing = (
       <Route path="/News/TillySolidarity" element={<TillySolidarity />} />
       <Route path="/News/GlasgowPride2024" element={<GlasgowPride2024 />} />
       <Route path="/News/TDOV2025" element={<TDOV2025Event />} />
+      <Route path="/News/VisaAndMastercard" element={<VisaAndMastercard />} />
+      <Route path="/News/AltFringe2025" element={<AltFringe2025 />} />
     </Routes>
   </HashRouter>
 );

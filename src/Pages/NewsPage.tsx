@@ -10,6 +10,20 @@ function NewsPage() {
         <div className="news-page">
           <h2>News</h2>
           <div className="news-container">
+            {
+              //<div className="news-block">
+              //<NavLink to="/News/AltFringe2025">
+              //See Us at the Alt Fringe 2025
+              //</NavLink>
+              //<p>1st Aguust 2025</p>
+              //</div>
+            }
+            <div className="news-block">
+              <NavLink to="/News/VisaAndMastercard">
+                Visa and Mastercard censor queer creators online
+              </NavLink>
+              <p>27th July 2025</p>
+            </div>
             <div className="news-block">
               <NavLink to="/News/TDOV2025">
                 Trans Day of Visibility Readings 2025
