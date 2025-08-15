@@ -9,3 +9,7 @@
 @include meta.load-css("./styles/aboutpage");
 @include meta.load-css("./styles/newspage");
 @include meta.load-css("./styles/header");
+
+.App {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}

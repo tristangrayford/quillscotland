@@ -67,6 +67,19 @@
                 width:40px;
             }
         }
+
+        .email {
+            margin: 0;
+            .email-icon {
+                filter: invert(38%) sepia(100%) hue-rotate(200deg) saturate(27);
+            }
+        }
+
+        .discord {
+            height: 20px;
+            width: 35px;
+            margin: 0 -5px;
+        }
     }
 
     .header-logo {

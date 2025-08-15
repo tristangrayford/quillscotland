@@ -4,9 +4,9 @@ import menu from "../images/Menu.webp";
 import logo from "../images/Rainbow Quill.png";
 import Facebook from "../images/social-media/Facebook.png";
 import Instagram from "../images/social-media/Instagram.png";
-import Twitter from "../images/social-media/Twitter.png";
 import Bluesky from "../images/social-media/Bluesky.png";
 import Email from "../images/social-media/Email.png";
+import Discord from "../images/social-media/Discord.png";
 
 interface MenuState {
   menuShown: boolean;
@@ -63,16 +63,17 @@ class HeaderMenu extends React.Component<{}, MenuState> {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://twitter.com/quillscotland"
-          >
-            <img src={Twitter} alt="Twitter" />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
             href="https://bsky.app/profile/quill.scot"
           >
             <img src={Bluesky} alt="Bluesky" />
+          </a>
+          <a
+            className="discord"
+            target="_blank"
+            rel="noreferrer"
+            href="https://discord.gg/pVENbPh3"
+          >
+            <img className="discord" src={Discord} alt="Discord" />
           </a>
           <a
             className="email"
@@ -80,7 +81,7 @@ class HeaderMenu extends React.Component<{}, MenuState> {
             rel="noreferrer"
             href="mailto:info@quill.scot?subject=Website Contact"
           >
-            <img src={Email} alt="Email" />
+            <img className="email-icon" src={Email} alt="Email" />
           </a>
         </div>
       </div>

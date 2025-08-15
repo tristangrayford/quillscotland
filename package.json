@@ -73,7 +73,7 @@
         "workbox-webpack-plugin": "^7.3.0"
     },
     "scripts": {
-        "predeploy": "npm run build && COPY \"CNAME\" \"./build/CNAME\"",
+        "predeploy": "npm run build && COPY \"CNAME\" \"./docs/CNAME\"",
         "deploy": "gh-pages -d docs",
         "start": "vite",
         "build": "tsc && vite build",

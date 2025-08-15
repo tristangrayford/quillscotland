@@ -11,6 +11,7 @@ import TDOV2025Event from "./Pages/News/TDOV2025Event";
 import { createRoot } from "react-dom/client";
 import { VisaAndMastercard } from "./Pages/News/VisaAndMastercard";
 import { AltFringe2025 } from "./Pages/News/AltFringe2025";
+import { SachaCowardPolari } from "./Pages/News/SachaCowardPolari";
 
 const routing = (
   <HashRouter>
@@ -24,6 +25,7 @@ const routing = (
       <Route path="/News/TDOV2025" element={<TDOV2025Event />} />
       <Route path="/News/VisaAndMastercard" element={<VisaAndMastercard />} />
       <Route path="/News/AltFringe2025" element={<AltFringe2025 />} />
+      <Route path="/News/SachaCowardPolari" element={<SachaCowardPolari />} />
     </Routes>
   </HashRouter>
 );
