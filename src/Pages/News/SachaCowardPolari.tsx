@@ -105,8 +105,5 @@ export function SachaCowardPolari() {
       <p>I fear not.</p>
     </>
   );
-  return NewsContainer(
-    news,
-    "Visa and Mastercard are Silencing Queer Creators Online"
-  );
+  return NewsContainer(news, "Sacha Coward on the Polari Prize");
 }
