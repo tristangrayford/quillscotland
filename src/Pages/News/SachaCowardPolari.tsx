@@ -14,6 +14,13 @@ export function SachaCowardPolari() {
         </b>
       </p>
       <p>
+        Response to the following article from The Guardian:{" "}
+        <a href="https://www.theguardian.com/world/2025/aug/14/john-boyne-says-lgbtq-polari-fiction-prize-backlash-brought-him-close-to-the-edge?utm_source=dlvr.it&utm_medium=bluesky&CMP=bsky_gu">
+          John Boyne says LGBTQ+ fiction prize backlash brought him ‘close to
+          the edge’
+        </a>
+      </p>
+      <p>
         I am one of the 16 (updated) authors who chose to leave the Polari
         Prize, and I find myself frustrated and saddened at the way this entire
         story has been represented.
@@ -61,7 +68,7 @@ export function SachaCowardPolari() {
       </p>
       <p>We left a literary award.</p>
       <p>
-        In the articles I have read in the mainstream press Jon Boyne has been
+        In the articles I have read in the mainstream press John Boyne has been
         giving space to share his feelings, his human response to this, which is
         exactly as it should be.
       </p>
@@ -87,7 +94,7 @@ export function SachaCowardPolari() {
       </p>
       <p>
         Nothing about this is pleasant, nobody is enjoying this or doing it for
-        ‘woke points’. People have principles by which they stand, and 14 of us
+        ‘woke points’. People have principles by which they stand, and 16 of us
         have decided that these no longer align with the Polari Prize. I stand
         by my decision, and every author that was called to make a similar
         choice.
