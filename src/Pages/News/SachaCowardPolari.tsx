@@ -6,10 +6,12 @@ export function SachaCowardPolari() {
     <>
       <img src={SachaCoward} alt="Sacha Coward's profile pic on bluesky" />
       <p>
-        Shared with permission by Sacha Coward from the{" "}
-        <a href="https://bsky.app/profile/sachacoward.bsky.social/post/3lwglrf2rc22b">
-          Original Thread
-        </a>
+        <b>
+          Shared with permission by Sacha Coward from the{" "}
+          <a href="https://bsky.app/profile/sachacoward.bsky.social/post/3lwglrf2rc22b">
+            Original Thread
+          </a>
+        </b>
       </p>
       <p>
         I am one of the 16 (updated) authors who chose to leave the Polari
